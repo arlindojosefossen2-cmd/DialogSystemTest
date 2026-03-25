@@ -1,0 +1,213 @@
+@startuml
+class br.com.ajf.dialogsystem.scenes.IslandScene {
+- ChangeIslandScene sceneTransition
++ <<Create>> IslandScene(Game,AbstractCharacter)
++ Scene start()
+# void sceneTransition(AbstractCharacter,Collider)
+}
+
+
+class br.com.ajf.dialogsystem.dialog.CharacterDialog {
+- Dialog dialog
+- SubScreen screen
+- Map<String,BufferedImage> images
+- BufferedImage img
++ <<Create>> CharacterDialog()
++ CharacterDialog add(String,String)
++ void draw(Graphics2D,String)
++ boolean isDialog()
++ void setDialog(boolean)
+}
+
+
+abstract class br.com.ajf.dialogsystem.scenes.AbstractScene {
+# {static} String TRASITION
+# {static} String COLLISION
+# List<Collider> colliders
+# List<Collider> transitions
+# List<AbstractCharacter> characters
+# AbstractCharacter[] charactersArray
+# Game game
+# DartPlayer player
+# ITileManager tileManager
+# int[] layers
+# boolean debug
+# String name
+- CharacterOrderLayer ordernator
+# Transition transition
+# boolean dialog
++ CharacterDialog dialogs
++ int index
++ <<Create>> AbstractScene(Game,AbstractCharacter)
+# {abstract}void sceneTransition(AbstractCharacter,Collider)
++ void update()
+- void updateDialog()
+- void updateDialog(int)
+- void dialogchecker(int)
+- void changeCharacterdirection(int)
+- boolean validateCharacterDialogChecher(int)
++ void updateCharactersCollisions()
+# void collision(AbstractCharacter)
+- boolean validateCharacterCollisionChecker(AbstractCharacter,int)
++ void updateCharacter(AbstractCharacter)
++ void layerTransition(AbstractCharacter,Collider,int)
++ void draw(Graphics2D)
++ String getSceneName()
++ Scene setSceneName(String)
++ void setTransition(Transition)
+}
+
+
+class br.com.ajf.dialogsystem.scenes.HomeScene {
++ <<Create>> HomeScene(Game,AbstractCharacter)
++ Scene start()
+# void sceneTransition(AbstractCharacter,Collider)
+}
+
+class br.com.ajf.dialogsystem.player.DrawPlayerUI {
++ {static} int STYLE_FONT_32
++ void drawUI(Graphics2D,Player)
+}
+
+
+class br.com.ajf.dialogsystem.scenes.Transition {
+- {static} float FONT_SIZE
+- IAnimation animation
+- String name
+- int width
+- int height
+- FontMetrics metrics
+- IAudio transitionSound
++ <<Create>> Transition(String,BufferedImage[],float)
++ void update(float)
++ void draw(Graphics2D)
++ boolean isFinished()
++ void setName(String)
++ void reset()
+}
+
+
+class br.com.ajf.dialogsystem.scenes.ChangeIslandScene {
++ void changeScene(AbstractCharacter,Collider,Game,AbstractCharacter)
+}
+
+class br.com.ajf.dialogsystem.utility.SubScreen {
+- int xPos
+- int yPos
+- int width
+- int height
++ <<Create>> SubScreen(int,int,int,int)
++ void draw(Graphics2D)
++ int xPos()
++ int yPos()
++ int width()
++ int height()
+}
+
+
+class br.com.ajf.dialogsystem.entity.EntityMoviment {
++ <<Create>> EntityMoviment(AbstractCharacter)
+# void update(float,IAnimationManager)
+# void prevent(float)
+}
+
+class br.com.ajf.dialogsystem.scenes.DrawScene {
+- <<Create>> DrawScene()
++ {static} void draw(Graphics2D,Game,AbstractScene)
+}
+
+class br.com.ajf.dialogsystem.entity.EntityInput {
+- Random rand
+- int direction
+- int counter
++ <<Create>> EntityInput(AbstractCharacter)
+# void updateInputs()
+}
+
+
+class br.com.ajf.dialogsystem.scenes.CaveScene {
++ <<Create>> CaveScene(Game,AbstractCharacter)
++ Scene start()
+# void sceneTransition(AbstractCharacter,Collider)
+}
+
+class br.com.ajf.dialogsystem.player.DartPlayerInputs {
++ <<Create>> DartPlayerInputs(AbstractCharacter)
++ void updateInputs()
+- boolean isRight()
+- boolean isLeft()
+- boolean isDown()
+- boolean isUp()
+}
+
+class br.com.ajf.dialogsystem.main.GameLauncher {
++ {static} String TITLE
++ {static} int ORIGINAL_TILESIZE
++ {static} float SCALE
++ {static} int TILESIZE
++ {static} int MAX_NUMBER_ROWS
++ {static} int MAX_NUMBER_COLUMNS
++ {static} int WIDTH
++ {static} int HEIGHT
++ {static} void main(String[])
+}
+
+
+class br.com.ajf.dialogsystem.entity.EntityPlayer {
++ void start()
+}
+
+class br.com.ajf.dialogsystem.scenes.CityScene {
++ <<Create>> CityScene(Game,AbstractCharacter)
++ Scene start()
+# void sceneTransition(AbstractCharacter,Collider)
+}
+
+class br.com.ajf.dialogsystem.player.DartPlayer {
++ void start()
++ void drawUI(Graphics2D)
+}
+
+class br.com.ajf.dialogsystem.player.DartPlayerMoviment {
++ <<Create>> DartPlayerMoviment(AbstractCharacter)
+- void standing(IAnimationManager)
+- void moving(IAnimationManager)
++ void prevent(float)
++ void update(float,IAnimationManager)
+}
+
+class br.com.ajf.dialogsystem.scenes.TempleScene {
++ <<Create>> TempleScene(Game,AbstractCharacter)
++ Scene start()
+# void sceneTransition(AbstractCharacter,Collider)
+}
+
+class br.com.ajf.dialogsystem.dialog.Dialog {
+- int index
+- Map<String,List<String>> dialogs
+- boolean dialog
+- List<String> dialogsList
++ <<Create>> Dialog()
++ Dialog add(String,String)
++ void draw(Graphics2D,String,int,int)
++ boolean isDialog()
++ void setDialog(boolean)
+}
+
+
+
+
+br.com.ajf.dialogsystem.scenes.AbstractScene <|-- br.com.ajf.dialogsystem.scenes.IslandScene
+br.com.ajf.game.scene.Scene <|.. br.com.ajf.dialogsystem.scenes.AbstractScene
+br.com.ajf.dialogsystem.scenes.AbstractScene <|-- br.com.ajf.dialogsystem.scenes.HomeScene
+br.com.ajf.game.player.IDrawPlayerUI <|.. br.com.ajf.dialogsystem.player.DrawPlayerUI
+br.com.ajf.game.character.AbstractCharacterMoviment <|-- br.com.ajf.dialogsystem.entity.EntityMoviment
+br.com.ajf.game.character.AbstractCharacterInput <|-- br.com.ajf.dialogsystem.entity.EntityInput
+br.com.ajf.dialogsystem.scenes.AbstractScene <|-- br.com.ajf.dialogsystem.scenes.CaveScene
+br.com.ajf.game.character.AbstractCharacterInput <|-- br.com.ajf.dialogsystem.player.DartPlayerInputs
+br.com.ajf.game.character.AbstractCharacter <|-- br.com.ajf.dialogsystem.entity.EntityPlayer
+br.com.ajf.dialogsystem.scenes.AbstractScene <|-- br.com.ajf.dialogsystem.scenes.CityScene
+br.com.ajf.game.player.Player <|-- br.com.ajf.dialogsystem.player.DartPlayer
+br.com.ajf.game.character.AbstractCharacterMoviment <|-- br.com.ajf.dialogsystem.player.DartPlayerMoviment
+br.com.ajf.dialogsystem.scenes.AbstractScene <|-- br.com.ajf.dialogsystem.scenes.TempleScene
+@enduml

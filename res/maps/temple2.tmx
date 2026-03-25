@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="40" height="40" tilewidth="16" tileheight="16" infinite="0" nextlayerid="4" nextobjectid="33">
+ <properties>
+  <property name="scale" type="float" value="4"/>
+ </properties>
+ <tileset firstgid="1" name="Temple" tilewidth="16" tileheight="16" tilecount="28" columns="7">
+  <image source="/tiles/temple.png" width="112" height="64"/>
+  <tile id="0" type="Tiles">
+   <properties>
+    <property name="animated" type="bool" value="false"/>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </tile>
+  <tile id="1" type="Tiles">
+   <properties>
+    <property name="animated" type="bool" value="false"/>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </tile>
+  <tile id="2" type="Tiles">
+   <properties>
+    <property name="animated" type="bool" value="false"/>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </tile>
+  <tile id="3" type="Tiles">
+   <properties>
+    <property name="animated" type="bool" value="false"/>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </tile>
+  <tile id="4" type="Tiles">
+   <properties>
+    <property name="animated" type="bool" value="false"/>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </tile>
+  <tile id="5" type="Tiles">
+   <properties>
+    <property name="animated" type="bool" value="false"/>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </tile>
+  <tile id="6" type="Tiles">
+   <properties>
+    <property name="animated" type="bool" value="false"/>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </tile>
+  <tile id="7" type="Tiles">
+   <properties>
+    <property name="animated" type="bool" value="false"/>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </tile>
+  <tile id="8" type="Tiles">
+   <properties>
+    <property name="animated" type="bool" value="false"/>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </tile>
+  <tile id="9" type="Tiles">
+   <properties>
+    <property name="animated" type="bool" value="false"/>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </tile>
+  <tile id="10" type="Tiles">
+   <properties>
+    <property name="animated" type="bool" value="false"/>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </tile>
+  <tile id="11" type="Tiles">
+   <properties>
+    <property name="animated" type="bool" value="false"/>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </tile>
+  <tile id="12" type="Tiles">
+   <properties>
+    <property name="animated" type="bool" value="false"/>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </tile>
+  <tile id="13" type="Tiles">
+   <properties>
+    <property name="animated" type="bool" value="false"/>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </tile>
+  <tile id="14" type="Tiles">
+   <properties>
+    <property name="animated" type="bool" value="false"/>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </tile>
+  <tile id="15" type="Tiles">
+   <properties>
+    <property name="animated" type="bool" value="false"/>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </tile>
+  <tile id="16" type="Tiles">
+   <properties>
+    <property name="animated" type="bool" value="false"/>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </tile>
+  <tile id="17" type="Tiles">
+   <properties>
+    <property name="animated" type="bool" value="false"/>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </tile>
+  <tile id="18" type="Tiles">
+   <properties>
+    <property name="animated" type="bool" value="false"/>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </tile>
+  <tile id="19" type="Tiles">
+   <properties>
+    <property name="animated" type="bool" value="false"/>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </tile>
+  <tile id="20" type="Tiles">
+   <properties>
+    <property name="animated" type="bool" value="false"/>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </tile>
+  <tile id="21" type="Tiles">
+   <properties>
+    <property name="animated" type="bool" value="false"/>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </tile>
+  <tile id="22" type="Tiles">
+   <properties>
+    <property name="animated" type="bool" value="false"/>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </tile>
+  <tile id="23" type="Tiles">
+   <properties>
+    <property name="animated" type="bool" value="false"/>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </tile>
+  <tile id="24" type="Tiles">
+   <properties>
+    <property name="animated" type="bool" value="false"/>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </tile>
+  <tile id="25" type="Tiles">
+   <properties>
+    <property name="animated" type="bool" value="false"/>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </tile>
+  <tile id="26" type="Tiles">
+   <properties>
+    <property name="animated" type="bool" value="false"/>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </tile>
+  <tile id="27" type="Tiles">
+   <properties>
+    <property name="animated" type="bool" value="false"/>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </tile>
+ </tileset>
+ <layer id="1" name="Floor" width="40" height="40">
+  <data encoding="csv">
+19,27,27,27,27,27,27,27,27,27,27,27,27,27,27,27,27,27,27,27,27,27,27,27,27,27,27,27,27,27,27,27,27,27,27,27,27,27,27,14,
+20,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,20,
+20,22,22,22,22,22,22,22,22,22,23,23,23,23,23,23,23,23,23,23,23,23,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,20,
+20,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,3,3,4,4,4,4,3,4,4,22,20,
+20,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,3,4,4,4,4,4,3,4,4,22,20,
+20,4,4,4,4,4,4,4,4,4,4,4,4,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,4,3,4,22,20,
+20,4,4,4,4,4,4,4,4,2,2,2,2,4,3,4,4,4,4,3,3,3,3,3,3,3,3,2,2,2,4,4,4,22,22,2,2,4,22,20,
+20,4,4,4,4,4,4,4,22,22,2,4,4,3,3,4,4,4,4,4,4,4,4,4,4,2,2,4,4,4,2,2,2,4,4,4,3,4,17,20,
+20,4,4,4,4,4,4,4,4,4,4,2,2,3,4,4,4,4,4,4,4,4,4,4,2,4,4,4,2,2,4,4,4,4,4,4,3,4,17,20,
+20,4,4,4,4,4,4,4,4,4,4,3,2,2,4,3,3,3,3,3,4,2,2,2,4,2,2,2,4,4,4,4,4,4,4,4,3,4,17,20,
+20,4,4,4,4,4,4,3,3,3,3,3,4,2,2,3,4,4,4,2,2,4,4,4,2,4,4,4,4,4,4,4,4,4,4,4,3,4,17,20,
+20,4,4,4,4,4,3,3,4,4,4,4,4,3,2,2,4,4,2,2,3,3,2,2,3,3,3,3,3,3,4,4,4,4,4,4,3,4,17,20,
+20,4,4,4,4,4,3,4,4,4,4,4,3,3,4,2,2,2,2,4,4,2,2,4,4,4,4,4,4,4,4,4,4,4,4,3,3,4,17,20,
+20,4,4,4,4,4,3,4,4,4,4,4,3,4,4,4,2,2,4,4,4,2,4,4,4,4,4,4,4,4,4,4,4,4,3,3,4,4,17,20,
+20,4,4,4,4,4,3,4,4,4,4,3,4,4,4,4,2,2,2,4,4,2,4,4,4,4,4,4,4,4,4,4,4,3,3,4,4,4,17,20,
+20,4,4,4,4,4,3,4,4,4,4,3,4,4,4,4,4,2,2,2,2,2,3,3,4,4,4,4,4,4,4,22,22,3,4,4,4,4,17,20,
+20,4,4,4,4,4,3,4,4,4,4,3,4,4,4,4,4,2,2,4,3,4,4,3,3,3,3,4,4,4,4,4,3,4,4,4,4,4,17,20,
+20,4,4,4,4,4,4,3,4,4,4,4,3,4,4,4,4,2,2,2,3,4,4,4,4,4,3,3,4,4,4,3,4,4,4,4,4,4,23,20,
+20,4,4,4,4,4,4,3,4,4,4,4,3,2,2,2,2,4,4,3,4,4,4,4,4,4,3,3,3,4,4,3,4,4,4,4,4,4,23,20,
+20,4,4,4,4,4,4,3,3,4,2,2,2,4,4,4,4,4,3,4,4,4,4,3,3,3,4,4,4,4,4,3,4,4,4,4,4,4,23,20,
+20,4,4,4,4,4,4,2,2,22,22,4,3,4,4,4,4,4,3,4,4,3,3,3,4,4,4,4,4,4,4,3,4,4,4,4,4,4,23,20,
+20,4,4,4,4,4,4,2,2,3,3,4,4,3,4,4,4,4,3,4,4,3,4,4,4,4,4,4,4,4,3,3,4,4,4,4,4,4,23,20,
+20,4,4,4,4,4,4,4,2,4,3,4,3,3,4,4,4,4,3,4,4,3,4,4,4,4,4,22,22,4,3,4,4,4,4,4,4,4,23,20,
+20,4,4,4,4,4,4,4,3,2,3,3,4,4,4,4,4,4,3,4,4,3,4,4,4,4,4,4,4,4,3,4,4,4,4,4,4,4,23,20,
+20,4,4,4,4,4,4,3,3,3,2,4,4,4,4,4,4,3,3,4,4,3,4,4,4,4,4,4,4,4,3,4,4,4,4,4,4,4,4,20,
+20,4,4,4,4,4,4,3,3,4,2,4,4,4,4,4,4,3,4,4,4,3,4,4,4,4,4,4,2,2,3,4,4,4,4,4,4,4,17,20,
+20,4,4,4,4,4,4,3,3,4,4,2,2,4,4,4,4,4,3,4,4,3,4,4,4,4,4,4,2,2,3,4,4,4,4,4,4,4,17,20,
+20,4,4,4,4,4,4,3,3,4,4,4,2,4,4,4,4,4,4,3,3,3,4,4,4,4,4,4,2,2,3,3,4,4,4,4,4,4,17,20,
+20,4,4,4,4,4,4,3,4,3,3,4,4,2,2,4,4,4,4,4,3,4,3,3,3,4,4,4,2,2,4,3,4,4,4,4,4,4,23,20,
+20,4,4,4,4,4,4,4,3,22,22,4,3,4,4,2,4,4,4,3,4,4,4,4,4,3,3,3,2,3,2,3,4,4,4,4,4,4,23,20,
+20,4,4,4,4,4,4,4,4,3,3,4,4,3,3,3,2,2,3,3,4,4,4,4,4,4,4,3,2,3,2,3,3,4,4,4,4,4,23,20,
+20,4,4,4,4,4,4,4,4,4,4,3,3,4,4,4,4,2,2,4,4,4,4,4,4,4,3,2,2,4,2,3,3,4,22,22,4,4,23,20,
+20,4,4,4,4,4,4,4,4,4,4,4,4,3,3,2,2,2,4,4,4,4,4,4,3,3,4,2,4,4,2,3,4,4,4,4,4,4,23,20,
+20,4,4,4,4,4,4,4,4,4,4,4,4,2,2,2,3,3,3,3,3,3,3,3,4,4,2,2,4,2,2,4,4,4,4,4,4,4,22,20,
+20,4,4,4,4,4,4,4,4,4,4,2,2,4,4,4,4,4,4,4,4,4,2,2,2,2,2,2,2,4,4,4,4,4,4,4,4,4,22,20,
+20,4,4,4,4,4,4,4,4,4,2,2,2,2,2,2,2,2,2,2,2,2,2,4,4,2,2,4,4,4,4,4,4,4,4,4,4,4,22,20,
+20,4,4,4,4,4,4,4,4,4,4,2,2,2,2,4,4,4,2,17,23,17,17,4,4,2,4,4,4,4,4,4,4,4,4,4,4,4,22,20,
+20,17,17,23,23,23,23,23,23,23,23,17,17,17,17,17,17,23,17,2,2,2,2,17,17,17,17,17,22,22,22,22,22,22,17,17,17,17,17,20,
+20,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,17,17,17,17,17,4,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,20,
+4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,17,23,17,17,17,17,17,17,17,17,17,17,4,4,4,4,4,4,4,4
+</data>
+ </layer>
+ <objectgroup id="2" name="CollisionsTransitionsPositions">
+  <object id="1" name="Collision" type="Collision" x="1.5" y="1" width="638.5" height="22.3636">
+   <properties>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="2" name="Collision" type="Collision" x="352" y="619.417" width="287.083" height="20">
+   <properties>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="3" name="Collision" type="Collision" x="0" y="620" width="320" height="20">
+   <properties>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="4" name="Collision" type="Collision" x="0" y="25.25" width="16" height="595.5">
+   <properties>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="5" name="Collision" type="Collision" x="624.5" y="25" width="15.75" height="594.75">
+   <properties>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="6" name="Collision" type="Collision" x="528.75" y="501.773" width="14.5" height="5.11364">
+   <properties>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="7" name="Collision" type="Collision" x="416.932" y="357.261" width="14.5" height="5.11364">
+   <properties>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="8" name="Collision" type="Collision" x="480.75" y="245.443" width="14.5" height="5.11364">
+   <properties>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="9" name="Collision" type="Collision" x="512.875" y="101.943" width="14.5" height="5.11364">
+   <properties>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="10" name="Collision" type="Collision" x="112.75" y="117.989" width="14.5" height="5.11364">
+   <properties>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="11" name="Collision" type="Collision" x="128.568" y="325.807" width="14.5" height="5.11364">
+   <properties>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="12" name="Collision" type="Collision" x="128.568" y="469.443" width="14.5" height="5.11364">
+   <properties>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="13" name="Transition" type="Transition" x="107.818" y="124" width="26" height="8.72727">
+   <properties>
+    <property name="layer" type="int" value="1"/>
+   </properties>
+  </object>
+  <object id="14" name="Transition" type="Transition" x="121.909" y="330.909" width="26" height="8.72727">
+   <properties>
+    <property name="layer" type="int" value="1"/>
+   </properties>
+  </object>
+  <object id="15" name="Transition" type="Transition" x="122.091" y="474.545" width="26" height="8.72727">
+   <properties>
+    <property name="layer" type="int" value="1"/>
+   </properties>
+  </object>
+  <object id="16" name="Transition" type="Transition" x="523.636" y="506.955" width="26" height="8.72727">
+   <properties>
+    <property name="layer" type="int" value="1"/>
+   </properties>
+  </object>
+  <object id="17" name="Transition" type="Transition" x="412" y="362.761" width="26" height="8.72727">
+   <properties>
+    <property name="layer" type="int" value="1"/>
+   </properties>
+  </object>
+  <object id="18" name="Transition" type="Transition" x="475.75" y="251.136" width="26" height="8.72727">
+   <properties>
+    <property name="layer" type="int" value="1"/>
+   </properties>
+  </object>
+  <object id="19" name="Transition" type="Transition" x="508.75" y="107.136" width="26" height="8.72727">
+   <properties>
+    <property name="layer" type="int" value="1"/>
+   </properties>
+  </object>
+  <object id="20" name="Transition" type="Transition" x="16.3182" y="593.455" width="608.136" height="26">
+   <properties>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="21" name="Transition" type="Transition" x="15.75" y="26.6364" width="606.25" height="16.7273">
+   <properties>
+    <property name="layer" type="int" value="1"/>
+   </properties>
+  </object>
+  <object id="22" name="Transition" type="Transition" x="507.5" y="92.6364" width="26" height="8.72727">
+   <properties>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="23" name="Transition" type="Transition" x="475" y="235.886" width="26" height="8.72727">
+   <properties>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="24" name="Transition" type="Transition" x="410.5" y="349.136" width="26" height="8.72727">
+   <properties>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="25" name="Transition" type="Transition" x="523" y="487.636" width="26" height="13.4773">
+   <properties>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="26" name="Transition" type="Transition" x="122.75" y="458.386" width="26" height="8.72727">
+   <properties>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="27" name="Transition" type="Transition" x="122.25" y="315.136" width="26" height="8.72727">
+   <properties>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="28" name="Transition" type="Transition" x="107" y="108.136" width="26" height="8.72727">
+   <properties>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="29" name="Transition" type="Transition" x="320.75" y="628.886" width="30.75" height="11.2273">
+   <properties>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="30" name="Transition" type="Transition" x="15.572" y="511.167" width="16.6136" height="16.4546">
+   <properties>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="31" name="Transition" type="Transition" x="352.602" y="48.6818" width="15.5227" height="14.6364">
+   <properties>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="32" name="Position" type="Position" x="335.75" y="599.5">
+   <properties>
+    <property name="name" value="Player"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <layer id="2" name="Wall" width="40" height="40">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,12,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,12,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,12,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,12,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,12,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,12,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,12,0,0,0,0,0,0,
+0,6,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,13,27,27,25,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+26,27,27,27,27,27,27,27,27,27,27,27,27,27,27,27,27,27,25,9,10,10,11,13,27,27,27,27,27,27,27,27,27,27,27,27,27,27,27,21,
+1,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,16,0,0,18,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,15
+</data>
+ </layer>
+</map>

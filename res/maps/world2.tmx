@@ -1,0 +1,1388 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.11.2" class="Map" orientation="orthogonal" renderorder="right-down" width="50" height="50" tilewidth="16" tileheight="16" infinite="0" nextlayerid="5" nextobjectid="51">
+ <properties>
+  <property name="scale" type="float" value="4"/>
+ </properties>
+ <tileset firstgid="1" name="world" tilewidth="16" tileheight="16" tilecount="160" columns="16">
+  <image source="/tiles/worldtiles.png" width="256" height="160"/>
+  <tile id="0" type="Tiles">
+   <properties>
+    <property name="animated" type="bool" value="false"/>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </tile>
+  <tile id="1" type="Tiles">
+   <properties>
+    <property name="animated" type="bool" value="false"/>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </tile>
+  <tile id="2" type="Tiles">
+   <properties>
+    <property name="animated" type="bool" value="false"/>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </tile>
+  <tile id="3" type="Tiles">
+   <properties>
+    <property name="animated" type="bool" value="false"/>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </tile>
+  <tile id="4" type="Tiles">
+   <properties>
+    <property name="animated" type="bool" value="false"/>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </tile>
+  <tile id="5" type="Tiles">
+   <properties>
+    <property name="animated" type="bool" value="false"/>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </tile>
+  <tile id="6" type="Tiles">
+   <properties>
+    <property name="animated" type="bool" value="false"/>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </tile>
+  <tile id="7" type="Tiles">
+   <properties>
+    <property name="animated" type="bool" value="true"/>
+    <property name="frames" type="int" value="4"/>
+    <property name="interval" type="int" value="0.4"/>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </tile>
+  <tile id="8" type="Tiles">
+   <properties>
+    <property name="animated" type="bool" value="false"/>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </tile>
+  <tile id="9" type="Tiles">
+   <properties>
+    <property name="animated" type="bool" value="false"/>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </tile>
+  <tile id="10" type="Tiles">
+   <properties>
+    <property name="animated" type="bool" value="false"/>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </tile>
+  <tile id="11" type="Tiles">
+   <properties>
+    <property name="animated" type="bool" value="false"/>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </tile>
+  <tile id="12" type="Tiles">
+   <properties>
+    <property name="animated" type="bool" value="false"/>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </tile>
+  <tile id="13" type="Tiles">
+   <properties>
+    <property name="animated" type="bool" value="false"/>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </tile>
+  <tile id="14" type="Tiles">
+   <properties>
+    <property name="animated" type="bool" value="false"/>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </tile>
+  <tile id="15" type="Tiles">
+   <properties>
+    <property name="animated" type="bool" value="false"/>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </tile>
+  <tile id="16" type="Tiles">
+   <properties>
+    <property name="animated" type="bool" value="false"/>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </tile>
+  <tile id="17" type="Tiles">
+   <properties>
+    <property name="animated" type="bool" value="false"/>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </tile>
+  <tile id="18" type="Tiles">
+   <properties>
+    <property name="animated" type="bool" value="false"/>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </tile>
+  <tile id="19" type="Tiles">
+   <properties>
+    <property name="animated" type="bool" value="false"/>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </tile>
+  <tile id="20" type="Tiles">
+   <properties>
+    <property name="animated" type="bool" value="false"/>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </tile>
+  <tile id="21" type="Tiles">
+   <properties>
+    <property name="animated" type="bool" value="false"/>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </tile>
+  <tile id="22" type="Tiles">
+   <properties>
+    <property name="animated" type="bool" value="false"/>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </tile>
+  <tile id="23" type="Tiles">
+   <properties>
+    <property name="animated" type="bool" value="false"/>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </tile>
+  <tile id="24" type="Tiles">
+   <properties>
+    <property name="animated" type="bool" value="false"/>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </tile>
+  <tile id="25" type="Tiles">
+   <properties>
+    <property name="animated" type="bool" value="false"/>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </tile>
+  <tile id="26" type="Tiles">
+   <properties>
+    <property name="animated" type="bool" value="false"/>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </tile>
+  <tile id="27" type="Tiles">
+   <properties>
+    <property name="animated" type="bool" value="false"/>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </tile>
+  <tile id="28" type="Tiles">
+   <properties>
+    <property name="animated" type="bool" value="false"/>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </tile>
+  <tile id="29" type="Tiles">
+   <properties>
+    <property name="animated" type="bool" value="false"/>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </tile>
+  <tile id="30" type="Tiles">
+   <properties>
+    <property name="animated" type="bool" value="false"/>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </tile>
+  <tile id="31" type="Tiles">
+   <properties>
+    <property name="animated" type="bool" value="false"/>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </tile>
+  <tile id="32" type="Tiles">
+   <properties>
+    <property name="animated" type="bool" value="false"/>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </tile>
+  <tile id="33" type="Tiles">
+   <properties>
+    <property name="animated" type="bool" value="false"/>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </tile>
+  <tile id="34" type="Tiles">
+   <properties>
+    <property name="animated" type="bool" value="false"/>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </tile>
+  <tile id="35" type="Tiles">
+   <properties>
+    <property name="animated" type="bool" value="false"/>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </tile>
+  <tile id="36" type="Tiles">
+   <properties>
+    <property name="animated" type="bool" value="false"/>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </tile>
+  <tile id="37" type="Tiles">
+   <properties>
+    <property name="animated" type="bool" value="false"/>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </tile>
+  <tile id="38" type="Tiles">
+   <properties>
+    <property name="animated" type="bool" value="false"/>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </tile>
+  <tile id="39" type="Tiles">
+   <properties>
+    <property name="animated" type="bool" value="false"/>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </tile>
+  <tile id="40" type="Tiles">
+   <properties>
+    <property name="animated" type="bool" value="false"/>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </tile>
+  <tile id="41" type="Tiles">
+   <properties>
+    <property name="animated" type="bool" value="false"/>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </tile>
+  <tile id="42" type="Tiles">
+   <properties>
+    <property name="animated" type="bool" value="false"/>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </tile>
+  <tile id="43" type="Tiles">
+   <properties>
+    <property name="animated" type="bool" value="false"/>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </tile>
+  <tile id="44" type="Tiles">
+   <properties>
+    <property name="animated" type="bool" value="false"/>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </tile>
+  <tile id="45" type="Tiles">
+   <properties>
+    <property name="animated" type="bool" value="false"/>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </tile>
+  <tile id="46" type="Tiles">
+   <properties>
+    <property name="animated" type="bool" value="false"/>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </tile>
+  <tile id="47" type="Tiles">
+   <properties>
+    <property name="animated" type="bool" value="false"/>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </tile>
+  <tile id="48" type="Tiles">
+   <properties>
+    <property name="animated" type="bool" value="false"/>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </tile>
+  <tile id="49" type="Tiles">
+   <properties>
+    <property name="animated" type="bool" value="false"/>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </tile>
+  <tile id="50" type="Tiles">
+   <properties>
+    <property name="animated" type="bool" value="false"/>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </tile>
+  <tile id="51" type="Tiles">
+   <properties>
+    <property name="animated" type="bool" value="false"/>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </tile>
+  <tile id="52" type="Tiles">
+   <properties>
+    <property name="animated" type="bool" value="false"/>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </tile>
+  <tile id="53" type="Tiles">
+   <properties>
+    <property name="animated" type="bool" value="false"/>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </tile>
+  <tile id="54" type="Tiles">
+   <properties>
+    <property name="animated" type="bool" value="false"/>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </tile>
+  <tile id="55" type="Tiles">
+   <properties>
+    <property name="animated" type="bool" value="false"/>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </tile>
+  <tile id="56" type="Tiles">
+   <properties>
+    <property name="animated" type="bool" value="false"/>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </tile>
+  <tile id="57" type="Tiles">
+   <properties>
+    <property name="animated" type="bool" value="false"/>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </tile>
+  <tile id="58" type="Tiles">
+   <properties>
+    <property name="animated" type="bool" value="false"/>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </tile>
+  <tile id="59" type="Tiles">
+   <properties>
+    <property name="animated" type="bool" value="false"/>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </tile>
+  <tile id="60" type="Tiles">
+   <properties>
+    <property name="animated" type="bool" value="false"/>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </tile>
+  <tile id="61" type="Tiles">
+   <properties>
+    <property name="animated" type="bool" value="false"/>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </tile>
+  <tile id="62" type="Tiles">
+   <properties>
+    <property name="animated" type="bool" value="false"/>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </tile>
+  <tile id="63" type="Tiles">
+   <properties>
+    <property name="animated" type="bool" value="false"/>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </tile>
+  <tile id="64" type="Tiles">
+   <properties>
+    <property name="animated" type="bool" value="false"/>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </tile>
+  <tile id="65" type="Tiles">
+   <properties>
+    <property name="animated" type="bool" value="false"/>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </tile>
+  <tile id="66" type="Tiles">
+   <properties>
+    <property name="animated" type="bool" value="false"/>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </tile>
+  <tile id="67" type="Tiles">
+   <properties>
+    <property name="animated" type="bool" value="false"/>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </tile>
+  <tile id="68" type="Tiles">
+   <properties>
+    <property name="animated" type="bool" value="false"/>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </tile>
+  <tile id="69" type="Tiles">
+   <properties>
+    <property name="animated" type="bool" value="false"/>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </tile>
+  <tile id="70" type="Tiles">
+   <properties>
+    <property name="animated" type="bool" value="false"/>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </tile>
+  <tile id="71" type="Tiles">
+   <properties>
+    <property name="animated" type="bool" value="false"/>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </tile>
+  <tile id="72" type="Tiles">
+   <properties>
+    <property name="animated" type="bool" value="false"/>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </tile>
+  <tile id="73" type="Tiles">
+   <properties>
+    <property name="animated" type="bool" value="false"/>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </tile>
+  <tile id="74" type="Tiles">
+   <properties>
+    <property name="animated" type="bool" value="false"/>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </tile>
+  <tile id="75" type="Tiles">
+   <properties>
+    <property name="animated" type="bool" value="false"/>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </tile>
+  <tile id="76" type="Tiles">
+   <properties>
+    <property name="animated" type="bool" value="false"/>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </tile>
+  <tile id="77" type="Tiles">
+   <properties>
+    <property name="animated" type="bool" value="false"/>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </tile>
+  <tile id="78" type="Tiles">
+   <properties>
+    <property name="animated" type="bool" value="false"/>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </tile>
+  <tile id="79" type="Tiles">
+   <properties>
+    <property name="animated" type="bool" value="false"/>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </tile>
+  <tile id="80" type="Tiles">
+   <properties>
+    <property name="animated" type="bool" value="false"/>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </tile>
+  <tile id="81" type="Tiles">
+   <properties>
+    <property name="animated" type="bool" value="false"/>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </tile>
+  <tile id="82" type="Tiles">
+   <properties>
+    <property name="animated" type="bool" value="false"/>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </tile>
+  <tile id="83" type="Tiles">
+   <properties>
+    <property name="animated" type="bool" value="false"/>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </tile>
+  <tile id="84" type="Tiles">
+   <properties>
+    <property name="animated" type="bool" value="false"/>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </tile>
+  <tile id="85" type="Tiles">
+   <properties>
+    <property name="animated" type="bool" value="false"/>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </tile>
+  <tile id="86" type="Tiles">
+   <properties>
+    <property name="animated" type="bool" value="false"/>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </tile>
+  <tile id="87" type="Tiles">
+   <properties>
+    <property name="animated" type="bool" value="false"/>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </tile>
+  <tile id="88" type="Tiles">
+   <properties>
+    <property name="animated" type="bool" value="false"/>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </tile>
+  <tile id="89" type="Tiles">
+   <properties>
+    <property name="animated" type="bool" value="false"/>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </tile>
+  <tile id="90" type="Tiles">
+   <properties>
+    <property name="animated" type="bool" value="false"/>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </tile>
+  <tile id="91" type="Tiles">
+   <properties>
+    <property name="animated" type="bool" value="false"/>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </tile>
+  <tile id="92" type="Tiles">
+   <properties>
+    <property name="animated" type="bool" value="false"/>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </tile>
+  <tile id="93" type="Tiles">
+   <properties>
+    <property name="animated" type="bool" value="false"/>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </tile>
+  <tile id="94" type="Tiles">
+   <properties>
+    <property name="animated" type="bool" value="false"/>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </tile>
+  <tile id="95" type="Tiles">
+   <properties>
+    <property name="animated" type="bool" value="false"/>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </tile>
+  <tile id="96" type="Tiles">
+   <properties>
+    <property name="animated" type="bool" value="false"/>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </tile>
+  <tile id="97" type="Tiles">
+   <properties>
+    <property name="animated" type="bool" value="false"/>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </tile>
+  <tile id="98" type="Tiles">
+   <properties>
+    <property name="animated" type="bool" value="false"/>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </tile>
+  <tile id="99" type="Tiles">
+   <properties>
+    <property name="animated" type="bool" value="false"/>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </tile>
+  <tile id="100" type="Tiles">
+   <properties>
+    <property name="animated" type="bool" value="false"/>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </tile>
+  <tile id="101" type="Tiles">
+   <properties>
+    <property name="animated" type="bool" value="false"/>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </tile>
+  <tile id="102" type="Tiles">
+   <properties>
+    <property name="animated" type="bool" value="false"/>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </tile>
+  <tile id="103" type="Tiles">
+   <properties>
+    <property name="animated" type="bool" value="false"/>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </tile>
+  <tile id="104" type="Tiles">
+   <properties>
+    <property name="animated" type="bool" value="false"/>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </tile>
+  <tile id="105" type="Tiles">
+   <properties>
+    <property name="animated" type="bool" value="false"/>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </tile>
+  <tile id="106" type="Tiles">
+   <properties>
+    <property name="animated" type="bool" value="false"/>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </tile>
+  <tile id="107" type="Tiles">
+   <properties>
+    <property name="animated" type="bool" value="false"/>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </tile>
+  <tile id="108" type="Tiles">
+   <properties>
+    <property name="animated" type="bool" value="false"/>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </tile>
+  <tile id="109" type="Tiles">
+   <properties>
+    <property name="animated" type="bool" value="false"/>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </tile>
+  <tile id="110" type="Tiles">
+   <properties>
+    <property name="animated" type="bool" value="false"/>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </tile>
+  <tile id="111" type="Tiles">
+   <properties>
+    <property name="animated" type="bool" value="false"/>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </tile>
+  <tile id="112" type="Tiles">
+   <properties>
+    <property name="animated" type="bool" value="false"/>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </tile>
+  <tile id="113" type="Tiles">
+   <properties>
+    <property name="animated" type="bool" value="false"/>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </tile>
+  <tile id="114" type="Tiles">
+   <properties>
+    <property name="animated" type="bool" value="false"/>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </tile>
+  <tile id="115" type="Tiles">
+   <properties>
+    <property name="animated" type="bool" value="false"/>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </tile>
+  <tile id="116" type="Tiles">
+   <properties>
+    <property name="animated" type="bool" value="false"/>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </tile>
+  <tile id="117" type="Tiles">
+   <properties>
+    <property name="animated" type="bool" value="false"/>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </tile>
+  <tile id="118" type="Tiles">
+   <properties>
+    <property name="animated" type="bool" value="false"/>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </tile>
+  <tile id="119" type="Tiles">
+   <properties>
+    <property name="animated" type="bool" value="false"/>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </tile>
+  <tile id="120" type="Tiles">
+   <properties>
+    <property name="animated" type="bool" value="false"/>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </tile>
+  <tile id="121" type="Tiles">
+   <properties>
+    <property name="animated" type="bool" value="false"/>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </tile>
+  <tile id="122" type="Tiles">
+   <properties>
+    <property name="animated" type="bool" value="false"/>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </tile>
+  <tile id="123" type="Tiles">
+   <properties>
+    <property name="animated" type="bool" value="false"/>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </tile>
+  <tile id="124" type="Tiles">
+   <properties>
+    <property name="animated" type="bool" value="false"/>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </tile>
+  <tile id="125" type="Tiles">
+   <properties>
+    <property name="animated" type="bool" value="false"/>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </tile>
+  <tile id="126" type="Tiles">
+   <properties>
+    <property name="animated" type="bool" value="false"/>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </tile>
+  <tile id="127" type="Tiles">
+   <properties>
+    <property name="animated" type="bool" value="false"/>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </tile>
+  <tile id="128" type="Tiles">
+   <properties>
+    <property name="animated" type="bool" value="false"/>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </tile>
+  <tile id="129" type="Tiles">
+   <properties>
+    <property name="animated" type="bool" value="false"/>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </tile>
+  <tile id="130" type="Tiles">
+   <properties>
+    <property name="animated" type="bool" value="false"/>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </tile>
+  <tile id="131" type="Tiles">
+   <properties>
+    <property name="animated" type="bool" value="false"/>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </tile>
+  <tile id="132" type="Tiles">
+   <properties>
+    <property name="animated" type="bool" value="false"/>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </tile>
+  <tile id="133" type="Tiles">
+   <properties>
+    <property name="animated" type="bool" value="false"/>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </tile>
+  <tile id="134" type="Tiles">
+   <properties>
+    <property name="animated" type="bool" value="false"/>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </tile>
+  <tile id="135" type="Tiles">
+   <properties>
+    <property name="animated" type="bool" value="false"/>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </tile>
+  <tile id="136" type="Tiles">
+   <properties>
+    <property name="animated" type="bool" value="false"/>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </tile>
+  <tile id="137" type="Tiles">
+   <properties>
+    <property name="animated" type="bool" value="false"/>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </tile>
+  <tile id="138" type="Tiles">
+   <properties>
+    <property name="animated" type="bool" value="false"/>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </tile>
+  <tile id="139" type="Tiles">
+   <properties>
+    <property name="animated" type="bool" value="false"/>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </tile>
+  <tile id="140" type="Tiles">
+   <properties>
+    <property name="animated" type="bool" value="false"/>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </tile>
+  <tile id="141" type="Tiles">
+   <properties>
+    <property name="animated" type="bool" value="true"/>
+    <property name="frames" type="int" value="11"/>
+    <property name="interval" type="int" value="0.7"/>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </tile>
+  <tile id="142" type="Tiles">
+   <properties>
+    <property name="animated" type="bool" value="false"/>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </tile>
+  <tile id="143" type="Tiles">
+   <properties>
+    <property name="animated" type="bool" value="false"/>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </tile>
+  <tile id="144" type="Tiles">
+   <properties>
+    <property name="animated" type="bool" value="false"/>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </tile>
+  <tile id="145" type="Tiles">
+   <properties>
+    <property name="animated" type="bool" value="false"/>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </tile>
+  <tile id="146" type="Tiles">
+   <properties>
+    <property name="animated" type="bool" value="false"/>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </tile>
+  <tile id="147" type="Tiles">
+   <properties>
+    <property name="animated" type="bool" value="false"/>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </tile>
+  <tile id="148" type="Tiles">
+   <properties>
+    <property name="animated" type="bool" value="false"/>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </tile>
+  <tile id="149" type="Tiles">
+   <properties>
+    <property name="animated" type="bool" value="false"/>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </tile>
+  <tile id="150" type="Tiles">
+   <properties>
+    <property name="animated" type="bool" value="false"/>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </tile>
+  <tile id="151" type="Tiles">
+   <properties>
+    <property name="animated" type="bool" value="false"/>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </tile>
+  <tile id="152" type="Tiles">
+   <properties>
+    <property name="animated" type="bool" value="false"/>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </tile>
+  <tile id="153" type="Tiles">
+   <properties>
+    <property name="animated" type="bool" value="false"/>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </tile>
+  <tile id="154" type="Tiles">
+   <properties>
+    <property name="animated" type="bool" value="false"/>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </tile>
+  <tile id="155" type="Tiles">
+   <properties>
+    <property name="animated" type="bool" value="false"/>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </tile>
+  <tile id="156" type="Tiles">
+   <properties>
+    <property name="animated" type="bool" value="false"/>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </tile>
+  <tile id="157" type="Tiles">
+   <properties>
+    <property name="animated" type="bool" value="false"/>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </tile>
+  <tile id="158" type="Tiles">
+   <properties>
+    <property name="animated" type="bool" value="false"/>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </tile>
+  <tile id="159" type="Tiles">
+   <properties>
+    <property name="animated" type="bool" value="false"/>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </tile>
+ </tileset>
+ <layer id="1" name="Water" width="50" height="50">
+  <data encoding="csv">
+142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,
+142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,
+142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,
+142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,
+142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,
+142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,
+142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,
+142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,
+142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,
+142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,4,34,34,34,34,34,34,34,34,34,34,34,34,5,142,142,142,142,142,142,142,142,
+142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,4,34,34,34,34,34,34,34,34,34,34,34,34,35,16,16,16,16,16,16,16,16,16,16,16,16,33,5,142,142,142,142,142,142,142,
+142,142,142,142,142,142,142,142,142,142,142,4,34,34,34,35,16,16,16,115,115,16,16,16,16,16,16,16,16,16,16,115,115,16,16,16,16,16,16,114,16,16,17,142,142,142,142,142,142,142,
+142,142,142,142,142,142,142,142,142,4,34,35,16,16,16,16,16,16,115,115,16,108,108,16,16,16,16,16,16,16,115,115,16,114,16,16,108,108,16,16,16,1,21,142,142,142,142,142,142,142,
+142,142,142,142,142,142,142,142,142,19,16,16,16,115,115,16,16,16,16,16,16,16,108,108,16,16,114,16,115,115,115,16,16,16,16,16,16,108,108,16,16,17,142,142,142,142,142,142,142,142,
+142,142,142,142,142,142,142,142,142,19,16,115,115,115,16,0,0,0,0,0,0,16,16,108,108,16,16,16,16,16,16,16,16,16,16,16,16,16,108,108,16,17,142,142,142,142,142,142,142,142,
+142,142,142,142,142,142,142,142,142,19,115,115,114,16,0,0,0,0,0,0,0,0,16,16,108,108,108,16,16,16,16,16,16,16,16,16,16,16,16,16,16,17,142,142,142,142,142,142,142,142,
+142,142,142,142,142,142,142,142,142,19,114,16,16,16,0,0,0,0,0,0,0,0,16,114,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,17,142,142,142,142,142,142,142,142,
+142,142,142,142,142,142,142,142,142,19,16,16,16,16,0,0,0,0,0,0,0,0,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,17,142,142,142,142,142,142,142,142,
+142,142,142,142,142,142,142,142,142,19,16,16,16,16,141,106,99,100,101,106,139,107,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,17,142,142,142,142,142,142,142,142,
+142,142,142,142,142,142,142,142,142,19,16,16,16,16,105,91,91,73,90,127,127,128,16,16,16,16,16,16,16,16,16,16,16,76,77,78,79,80,16,116,16,17,142,142,142,142,142,142,142,142,
+142,142,142,142,142,142,142,142,142,19,16,16,16,16,16,16,49,50,50,50,50,50,50,50,50,51,16,16,16,16,16,16,16,92,93,94,95,96,16,116,16,17,142,142,142,142,142,142,142,142,
+142,142,142,142,142,142,142,142,142,19,16,16,16,16,16,16,65,85,84,66,85,85,85,66,66,67,16,115,115,16,16,16,16,16,49,50,51,16,16,116,16,17,142,142,142,142,142,142,142,142,
+142,142,142,142,142,142,142,142,142,19,16,16,16,16,16,16,81,82,82,82,82,82,82,53,66,67,16,16,115,115,16,16,16,16,65,84,67,16,116,116,16,17,142,142,142,142,142,142,142,142,
+142,142,142,142,142,142,142,142,142,19,16,114,16,116,116,16,16,16,16,16,16,16,16,65,66,67,16,16,16,16,16,16,16,16,65,84,67,16,16,16,16,17,142,142,142,142,142,142,142,142,
+142,142,142,142,142,142,142,142,142,19,16,16,116,116,16,16,22,23,24,16,16,16,16,65,85,68,50,50,50,50,50,50,50,50,69,66,67,16,116,16,16,17,142,142,142,142,142,142,142,142,
+142,142,142,142,142,142,142,142,142,19,16,116,116,16,114,16,38,39,40,16,16,16,16,65,84,12,66,84,66,66,84,66,66,84,66,84,67,16,116,16,16,17,142,142,142,142,142,142,142,142,
+142,142,142,142,142,142,142,142,142,20,3,16,16,16,16,16,49,50,51,16,16,16,16,65,66,52,82,82,82,82,82,82,82,82,53,84,67,16,16,16,16,17,142,142,142,142,142,142,142,142,
+142,142,142,142,142,142,142,142,142,142,19,16,16,16,16,16,65,66,67,16,16,16,16,65,66,67,16,16,16,16,16,16,16,16,65,84,67,16,16,16,1,21,142,142,142,142,142,142,142,142,
+142,142,142,142,142,142,142,142,142,4,35,117,115,16,16,16,65,85,68,50,50,50,50,69,84,67,16,16,16,16,16,16,16,16,65,84,68,51,16,16,17,142,142,142,142,142,142,142,142,142,
+142,142,142,142,142,142,142,142,142,19,16,117,115,115,16,16,65,84,12,66,85,85,84,66,66,67,16,16,16,16,16,16,16,16,65,12,84,67,16,16,17,142,142,142,142,142,142,142,142,142,
+142,142,142,142,142,142,142,142,142,19,16,117,117,115,115,16,81,82,82,82,82,82,82,82,82,83,16,16,16,16,16,115,115,16,81,53,84,67,16,16,33,5,142,142,142,142,142,142,142,142,
+142,142,142,142,142,142,142,142,142,19,16,16,117,117,115,117,117,16,16,16,16,16,16,16,16,16,16,16,16,115,115,115,117,16,16,65,84,67,16,16,16,17,142,142,142,142,142,142,142,142,
+142,142,142,142,142,142,142,142,142,20,2,3,16,117,16,116,116,117,117,117,16,16,16,16,16,16,16,16,115,115,117,117,16,16,16,65,84,67,16,16,16,17,142,142,142,142,142,142,142,142,
+142,142,142,142,142,142,142,142,142,142,142,20,3,16,16,16,116,116,116,116,117,16,16,16,16,16,16,16,116,116,16,16,16,16,16,65,84,67,16,16,16,17,142,142,142,142,142,142,142,142,
+142,142,142,142,142,142,142,142,142,142,142,142,19,16,16,16,16,16,16,116,116,16,16,16,16,16,16,16,16,116,116,116,16,16,16,65,84,67,16,16,16,17,142,142,142,142,142,142,142,142,
+142,142,142,142,142,142,142,142,142,142,142,142,20,2,3,16,16,16,16,16,116,116,115,16,16,16,16,16,16,116,16,116,116,16,16,81,82,83,16,116,16,17,142,142,142,142,142,142,142,142,
+142,142,142,142,142,142,142,142,142,142,142,142,142,142,20,2,2,2,3,16,16,16,115,115,16,16,16,116,116,116,16,16,16,16,16,16,8,16,16,116,16,17,142,142,142,142,142,142,142,142,
+142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,20,2,3,16,16,16,16,16,116,116,16,16,74,74,74,16,16,16,16,116,116,116,16,17,142,142,142,142,142,142,142,142,
+142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,20,2,3,16,16,16,16,16,16,16,16,16,74,74,74,16,116,116,16,16,16,17,142,142,142,142,142,142,142,142,
+142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,20,2,2,2,2,2,2,2,2,3,16,16,74,74,74,16,16,16,1,21,142,142,142,142,142,142,142,142,
+142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,19,16,16,16,16,16,16,1,2,21,142,142,142,142,142,142,142,142,142,
+142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,20,2,2,2,2,2,2,21,142,142,142,142,142,142,142,142,142,142,142,
+142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,
+142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,
+142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,
+142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,
+142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,
+142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,
+142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,
+142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142,142
+</data>
+ </layer>
+ <objectgroup id="4" name="CollisionsTransitionsPositions">
+  <object id="1" name="Transition" type="Transition" x="272.061" y="294.848" width="16.1515" height="10.3333">
+   <properties>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="2" name="Transition" type="Transition" x="256.674" y="384.583" width="46.9015" height="31.0833">
+   <properties>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="3" name="Transition" type="Transition" x="577.106" y="578.652" width="13.606" height="13.0606">
+   <properties>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="4" name="Transition" type="Transition" x="559.742" y="299.379" width="16.1515" height="5.96966">
+   <properties>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="5" name="Collision" type="Collision" x="363.5" y="629" width="144" height="30.5">
+   <properties>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="6" name="Collision" type="Collision" x="507.5" y="659.75" width="107.5" height="14">
+   <properties>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="7" name="Collision" type="Collision" x="458.5" y="147.333" width="203" height="10.9167">
+   <properties>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="8" name="Collision" type="Collision" x="232.75" y="581.5" width="66.5" height="14">
+   <properties>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="9" name="Collision" type="Collision" x="332.25" y="613.5" width="31.5" height="14">
+   <properties>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="10" name="Collision" type="Collision" x="299.25" y="596.5" width="31.5" height="16">
+   <properties>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="11" name="Collision" type="Collision" x="203.75" y="566.75" width="31.5" height="14">
+   <properties>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="12" name="Collision" type="Collision" x="155" y="516" width="31.5" height="18.5">
+   <properties>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="13" name="Collision" type="Collision" x="187.25" y="531.5" width="16" height="34.5">
+   <properties>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="14" name="Collision" type="Collision" x="147" y="459.417" width="8" height="55.1667">
+   <properties>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="15" name="Collision" type="Collision" x="155.625" y="420.917" width="16" height="38.75">
+   <properties>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="16" name="Collision" type="Collision" x="150.083" y="200.083" width="7.25" height="219.833">
+   <properties>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="17" name="Collision" type="Collision" x="248.894" y="158.992" width="212.667" height="13.0833">
+   <properties>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="18" name="Collision" type="Collision" x="658.875" y="197.356" width="15.25" height="239.583">
+   <properties>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="19" name="Collision" type="Collision" x="612.75" y="644.875" width="32" height="14.625">
+   <properties>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="20" name="Collision" type="Collision" x="644.25" y="629.375" width="18.75" height="14">
+   <properties>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="21" name="Collision" type="Collision" x="659.091" y="489.727" width="12.5455" height="137.818">
+   <properties>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="22" name="Collision" type="Collision" x="644.182" y="435" width="14.3636" height="56">
+   <properties>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="23" name="Collision" type="Collision" x="403.289" y="570.216" width="9.38384" height="2.56127">
+   <properties>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="24" name="Collision" type="Collision" x="419.178" y="314.189" width="9.62829" height="2.60227">
+   <properties>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="25" name="Collision" type="Collision" x="224.017" y="256.621" width="127.993" height="35.697">
+   <properties>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="26" name="Collision" type="Collision" x="288.697" y="292.845" width="63.2293" height="22.7273">
+   <properties>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="40" name="Collision" type="Collision" x="288.697" y="292.845" width="63.2293" height="22.7273">
+   <properties>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="27" name="Collision" type="Collision" x="224.063" y="293.864" width="47.4602" height="22.7273">
+   <properties>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="28" name="Collision" type="Collision" x="528.386" y="278.977" width="31.0227" height="56.4773">
+   <properties>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="29" name="Collision" type="Collision" x="576.33" y="279.083" width="31.0227" height="56.4287">
+   <properties>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="30" name="Collision" type="Collision" x="559.53" y="279.01" width="16.6477" height="19.0624">
+   <properties>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="31" name="Collision" type="Collision" x="157.136" y="186.205" width="31.8182" height="18.8636">
+   <properties>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="32" name="Collision" type="Collision" x="189.545" y="172.75" width="64" height="17.9545">
+   <properties>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="33" name="Collision" type="Collision" x="659.758" y="155.902" width="17.8182" height="15.5303">
+   <properties>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="34" name="Collision" type="Collision" x="675.091" y="172.356" width="10.394" height="25.2272">
+   <properties>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="35" name="Transition" type="Transition" x="412.02" y="316.895" width="25.231" height="11.3901">
+   <properties>
+    <property name="layer" type="int" value="1"/>
+   </properties>
+  </object>
+  <object id="36" name="Transition" type="Transition" x="395.158" y="573.048" width="28.5606" height="8.15148">
+   <properties>
+    <property name="layer" type="int" value="1"/>
+   </properties>
+  </object>
+  <object id="37" name="Position" type="Position" x="583.341" y="550.129">
+   <properties>
+    <property name="name" value="Player"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="38" name="Transition" type="Transition" x="404.112" y="273.658" width="39.6174" height="36.1629">
+   <properties>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="39" name="Transition" type="Transition" x="223.487" y="217.237" width="128.526" height="39.0265">
+   <properties>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="41" name="Transition" type="Transition" x="527.737" y="234.737" width="79.5265" height="43.2765">
+   <properties>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="42" name="Transition" type="Transition" x="388.328" y="529.669" width="39.1515" height="39.4328">
+   <properties>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="43" name="Transition" type="Transition" x="528.07" y="336.07" width="77.8598" height="13.1932">
+   <properties>
+    <property name="layer" type="int" value="1"/>
+   </properties>
+  </object>
+  <object id="44" name="Transition" type="Transition" x="223.135" y="317.555" width="130.981" height="11.6401">
+   <properties>
+    <property name="layer" type="int" value="1"/>
+   </properties>
+  </object>
+  <object id="45" name="Collision" type="Collision" x="451.198" y="490.073" width="9.38384" height="2.56127">
+   <properties>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="46" name="Transition" type="Transition" x="443.067" y="492.905" width="28.5606" height="8.15148">
+   <properties>
+    <property name="layer" type="int" value="1"/>
+   </properties>
+  </object>
+  <object id="47" name="Transition" type="Transition" x="436.237" y="449.526" width="39.1515" height="39.4328">
+   <properties>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="48" name="Collision" type="Collision" x="339.219" y="410.178" width="9.38384" height="2.56127">
+   <properties>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="49" name="Transition" type="Transition" x="331.088" y="413.01" width="28.5606" height="8.15148">
+   <properties>
+    <property name="layer" type="int" value="1"/>
+   </properties>
+  </object>
+  <object id="50" name="Transition" type="Transition" x="324.258" y="369.631" width="39.1515" height="39.4328">
+   <properties>
+    <property name="layer" type="int" value="0"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <layer id="2" name="Temple" width="50" height="50">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,113,120,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,113,98,98,98,135,140,98,120,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,129,124,125,16,105,128,16,121,0,0,0,0,0,0,0,0,0,0,0,0,13,14,15,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,135,118,119,118,119,118,119,140,0,0,0,0,0,0,0,0,0,0,0,28,29,30,31,32,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,141,106,106,106,106,106,106,107,0,0,0,0,0,0,0,0,0,0,0,44,45,46,47,48,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,60,61,62,63,64,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,86,87,88,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,86,87,88,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,86,87,88,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,86,87,88,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <layer id="3" name="Tree" width="50" height="50">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,54,55,56,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,70,71,72,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,25,26,27,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,41,42,43,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,25,26,27,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,41,42,43,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,25,26,27,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,41,42,43,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+</map>
