@@ -211,6 +211,12 @@ public abstract class AbstractScene implements Scene
 		this.name = name;
 		return this;
 	}
+
+	public AbstractScene addDialog(String characterName,String text)
+	{
+		this.dialogManager.addDialog(characterName,text);
+		return this;
+	}
 	
 	public void setTransition(Transition transition)
 	{

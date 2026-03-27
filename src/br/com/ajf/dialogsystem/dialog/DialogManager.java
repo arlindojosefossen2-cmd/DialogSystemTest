@@ -99,4 +99,9 @@ public final class DialogManager
 		//draw dialogs by character name
 		dialogs.draw(graphics2d,charactersArray[index].name);
 	}
+
+	public void addDialog(String characterName, String text)
+	{
+		this.dialogs.add(characterName,text);
+	}
 }
