@@ -21,6 +21,6 @@ public final class DrawPlayerUI implements IDrawPlayerUI
 		graphics2d.setColor(Color.blue);
 
 		graphics2d.fillRect(8, 48, 
-				(int) (GameLauncher.TILESIZE*GameLauncher.SCALE*player.health.getLife()/player.health.getMaxLife()), 32);
+				(int) (GameLauncher.TILE_SIZE *GameLauncher.SCALE*player.health.getLife()/player.health.getMaxLife()), 32);
 	}
 }

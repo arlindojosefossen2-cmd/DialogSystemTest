@@ -17,7 +17,6 @@ public final class CityScene extends AbstractScene
 	
 	/**
 	 * Instantiates a new city scene.
-	 *
 	 * @param game the game
 	 * @param player the player
 	 */
@@ -66,7 +65,6 @@ public final class CityScene extends AbstractScene
 			{
 				if(abstractCharacter.collider.intersects(collider))
 				{
-	//				change position of player when exit of the city
 					player.position.set(1080, 1680);
 					player.direction = FourDirections.DOWN;
 					this.transition.reset();

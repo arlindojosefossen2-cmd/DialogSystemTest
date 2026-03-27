@@ -5,7 +5,7 @@ import java.awt.event.KeyEvent;
 import java.util.ArrayList;
 import java.util.List;
 
-import br.com.ajf.dialogsystem.dialog.CharacterDialog;
+import br.com.ajf.dialogsystem.dialog.DialogManager;
 import br.com.ajf.dialogsystem.player.DartPlayer;
 import br.com.ajf.game.character.AbstractCharacter;
 import br.com.ajf.game.character.CharacterCollisions;
@@ -13,8 +13,6 @@ import br.com.ajf.game.character.CharacterOrderLayer;
 import br.com.ajf.game.collision.Collider;
 import br.com.ajf.game.framework.Game;
 import br.com.ajf.game.input.GameInput;
-import br.com.ajf.game.moviment.FourDirections;
-import br.com.ajf.game.player.Player;
 import br.com.ajf.game.scene.Scene;
 import br.com.ajf.game.tile.ITileManager;
 
@@ -54,24 +52,17 @@ public abstract class AbstractScene implements Scene
 	/** The layers. */
 	protected int[] layers;
 
-	/** The debug. */
-	protected boolean debug;
-	
 	protected String name;
 	
-	private final CharacterOrderLayer ordernator = new CharacterOrderLayer();
+	private final CharacterOrderLayer alternator = new CharacterOrderLayer();
 	
 	protected Transition transition = new Transition(
 			"Abstract Scene",
 			Game.LOADER.loadScaledBufferedImagesFromSheet("/transition/transition.png", 1, 5,8)
 			, 0.16f);
 
-	protected boolean dialog;
-	
-	public CharacterDialog dialogs = new CharacterDialog();
+	protected final DialogManager dialogManager = new DialogManager();
 
-	public int index;
-	
 	/**
 	 * Instantiates a new abstract scene.
 	 *
@@ -101,7 +92,7 @@ public abstract class AbstractScene implements Scene
 		//Debug Colliders
 		if(GameInput.keyDownOnce(KeyEvent.VK_B))
 		{
-			debug = !debug;
+			DebugScene.debug = !DebugScene.debug;
 			//testing a simple life bar
 			player.health.setLife(player.health.getLife()-1);
 		}
@@ -112,7 +103,7 @@ public abstract class AbstractScene implements Scene
 
 		updateDialog();
 		
-		characters.sort(ordernator);
+		characters.sort(alternator);
 		
 		if(transition != null)
 		{
@@ -122,70 +113,9 @@ public abstract class AbstractScene implements Scene
 
 	private void updateDialog()
 	{
-		for (int i = 0; i < charactersArray.length; i++)
-		{
-			if(validateCharacterDialogChecher(i))
-			{
-					updateDialog(i);
-			}
-		}
+		dialogManager.updateDialog(charactersArray,player);
 	}
 
-	private void updateDialog(int i)
-	{
-		dialog = true;
-		index = i;
-		charactersArray[i].moving = false;
-		
-		if(GameInput.keyDownOnce(KeyEvent.VK_M))
-		{
-			dialogchecker(i);
-		}
-	}
-
-	private void dialogchecker(int i)
-	{
-		dialogs.setDialog(true);
-		charactersArray[i].dialog = true;
-		
-		if(charactersArray[i].dialog)
-		{
-			changeCharacterdirection(i);
-		}
-		else if(!dialogs.isDialog())
-		{
-			charactersArray[i].dialog = false;
-		}
-	}
-
-	private void changeCharacterdirection(int i)
-	{
-		switch (player.direction)
-		{
-			case FourDirections.UP:
-				charactersArray[i].direction = FourDirections.DOWN;
-				charactersArray[i].animations.setAnimationByIndex(4);
-				break;
-			case FourDirections.DOWN:
-				charactersArray[i].direction = FourDirections.UP;
-				charactersArray[i].animations.setAnimationByIndex(0);
-				break;
-			case FourDirections.LEFT:
-				charactersArray[i].direction = FourDirections.RIGHT;
-				charactersArray[i].animations.setAnimationByIndex(6);
-				break;	
-			case FourDirections.RIGHT:
-				charactersArray[i].direction = FourDirections.LEFT;
-				charactersArray[i].animations.setAnimationByIndex(2);
-				break;
-		}
-	}
-
-	private boolean validateCharacterDialogChecher(int i)
-	{
-		return charactersArray[i] != null && !(charactersArray[i] instanceof Player) 
-				&& player.dialogArea.intersects(charactersArray[i].collider);
-	}
 
 	public void updateCharactersCollisions()
 	{

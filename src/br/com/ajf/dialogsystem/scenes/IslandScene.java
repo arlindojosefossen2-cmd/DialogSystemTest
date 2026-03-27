@@ -57,12 +57,12 @@ public final class IslandScene extends AbstractScene
 		entityTest.name = "Paul";
 		charactersArray[1] = entityTest;
 		
-		dialogs.add(entityTest.name,"Testing notting!")
+		dialogManager.dialogs.add(entityTest.name,"Testing notting!")
 		.add(entityTest.name,"Testing again!")
-		.add(entityTest.name,"Testing again!5\nTestiiiiiiiii\nfghabsjdfb")
-		.add(entityTest.name,"Testing again!6\ngdgdygsbcndhsdfhlsje")
-		.add(entityTest.name,"Testing again!8")
-		.add(entityTest.name,"Testing again!9");
+		.add(entityTest.name,"Testing again!\nTesting\nNothing")
+		.add(entityTest.name,"Testing again!\nNothing Again...again!")
+		.add(entityTest.name,"Testing again!")
+		.add(entityTest.name,"Testing again!");
 		
 		//testing more than one with dialog system
 		entityTest = new EntityPlayer();
@@ -72,14 +72,14 @@ public final class IslandScene extends AbstractScene
 		charactersArray[2] = entityTest;
 		entityTest.name = "Joan";
 		
-		dialogs.add(entityTest.name,"Testing notting!")
+		dialogManager.dialogs.add(entityTest.name,"Testing notting!")
 		.add(entityTest.name,"Testing again!")
-		.add(entityTest.name,"Testing again!3\nTestiiiiiiiii\nfghabsjdfb")
-		.add(entityTest.name,"Testing again!2\ngdgdygsbcndhsdfhlsje")
-		.add(entityTest.name,"Testing again!4")
-		.add(entityTest.name,"Testing again!1")
-		.add(entityTest.name,"Testing again!5")
-		.add(entityTest.name,"Default\nTesting\nAgaing!");
+		.add(entityTest.name,"Testing again!\nTesting\nother again.")
+		.add(entityTest.name,"Testing again!\nfinished again!")
+		.add(entityTest.name,"Testing again!")
+		.add(entityTest.name,"Testing again!")
+		.add(entityTest.name,"Testing again!")
+		.add(entityTest.name,"Default\nTesting\nAgain!");
 		//end testing
 		
 		sceneTransition = new ChangeIslandScene();

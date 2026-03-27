@@ -15,8 +15,6 @@ public final class ChangeIslandScene
 			{
 				if(abstractCharacter.collider.intersects(collider))
 				{
-	//				change position of player when enter cave example
-	//				player.position.set(00, 00);
 					player.position.set(1530,2400);
 					
 					if(game.changeScene("Cave") == null)
@@ -27,8 +25,6 @@ public final class ChangeIslandScene
 			{
 				if(abstractCharacter.collider.intersects(collider))
 				{
-	//				change position of player when enter city
-	//				player.position.set(300, 300);
 					player.direction = FourDirections.UP;
 					player.position.set(1613,2402);
 					
@@ -41,8 +37,6 @@ public final class ChangeIslandScene
 			{
 				if(abstractCharacter.collider.intersects(collider))
 				{
-	//				change position of player when enter temple
-	//				player.position.set(300, 300);
 					player.direction = FourDirections.UP;
 					player.position.set(1279,2349);
 					if(game.changeScene("Temple") == null)
@@ -53,8 +47,6 @@ public final class ChangeIslandScene
 			{
 				if(abstractCharacter.collider.intersects(collider))
 				{
-	//				change position of player when enter home
-	//				player.position.set(300, 300);
 					player.direction = FourDirections.UP;
 					player.position.set(1036,2364);
 					if(game.changeScene("Home") == null)

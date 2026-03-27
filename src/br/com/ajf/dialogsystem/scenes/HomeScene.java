@@ -64,7 +64,6 @@ public final class HomeScene extends AbstractScene
 			{
 				if(abstractCharacter.collider.intersects(collider))
 				{
-//  				change position of player when exit of the cave
 					player.position.set(2296, 2345);
 					this.transition.reset();
 					((AbstractScene)(this.game.changeScene("Island"))).transition.reset();	

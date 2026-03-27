@@ -9,13 +9,13 @@ public final class GameLauncher
 {
 	public static final String TITLE = "Game 2D Test";
 	
-	public static final int ORIGINAL_TILESIZE = 16;
+	public static final int ORIGINAL_TILE_SIZE = 16;
 	public static final float SCALE = 3;
-	public static final int TILESIZE = (int) (ORIGINAL_TILESIZE*SCALE);
+	public static final int TILE_SIZE = (int) (ORIGINAL_TILE_SIZE *SCALE);
 	public static final int MAX_NUMBER_ROWS = 12;
 	public static final int MAX_NUMBER_COLUMNS = 19;
-	public static final int WIDTH = TILESIZE*MAX_NUMBER_COLUMNS;
-	public static final int HEIGHT = TILESIZE*MAX_NUMBER_ROWS;
+	public static final int WIDTH = TILE_SIZE *MAX_NUMBER_COLUMNS;
+	public static final int HEIGHT = TILE_SIZE *MAX_NUMBER_ROWS;
 	
 	public static void main(String[] args)
 	{

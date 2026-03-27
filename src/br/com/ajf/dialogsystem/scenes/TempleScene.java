@@ -60,11 +60,6 @@ public final class TempleScene extends AbstractScene
 	{	
 		if(abstractCharacter.collider.getType().equalsIgnoreCase("player"))
 		{
-//			change position of player when exit of the temple 
-//			player.position.set(1080, 1680);
-//			this.transition.reset();
-//			((AbstractScene)(this.game.changeScene("Island"))).transition.reset();
-			
 			if(collider.getId() == 29)
 			{
 				if(abstractCharacter.collider.intersects(collider))
