@@ -60,7 +60,7 @@ public final class DrawScene
 		scene.player.drawUI(graphics2d);
 		
 		//draw dialogManager
-		scene.dialogManager.draw(graphics2d,scene.charactersArray);
+		scene.dialogManager.draw(graphics2d,scene.entities);
 
 		//draw transition
 		if(scene.transition != null)

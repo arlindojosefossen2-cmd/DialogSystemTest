@@ -7,6 +7,7 @@ import br.com.ajf.game.player.Player;
 
 import java.awt.*;
 import java.awt.event.KeyEvent;
+import java.util.List;
 
 public final class DialogManager
 {
@@ -19,9 +20,9 @@ public final class DialogManager
 		super();
 	}
 
-	public void updateDialog(AbstractCharacter[] charactersArray,Player player)
+	public void updateDialog(List<AbstractCharacter> charactersArray, Player player)
 	{
-		for (int i = 0; i < charactersArray.length; i++)
+		for (int i = 0; i < charactersArray.size(); i++)
 		{
 			if(validateCharacterDialogCheck(i, charactersArray,player))
 			{
@@ -30,11 +31,11 @@ public final class DialogManager
 		}
 	}
 
-	private void updateDialog(int i,Player player,AbstractCharacter[] charactersArray)
+	private void updateDialog(int i,Player player,List<AbstractCharacter> charactersArray)
 	{
 		dialog = true;
 		index = i;
-		charactersArray[i].moving = false;
+		charactersArray.get(i).moving = false;
 
 		if(GameInput.keyDownOnce(KeyEvent.VK_M))
 		{
@@ -42,51 +43,51 @@ public final class DialogManager
 		}
 	}
 
-	private void dialogCheck(int i,Player player ,AbstractCharacter[] charactersArray)
+	private void dialogCheck(int i,Player player ,List<AbstractCharacter> charactersArray)
 	{
 		dialogs.setDialog(true);
-		charactersArray[i].dialog = true;
+		charactersArray.get(i).dialog = true;
 
-		if(charactersArray[i].dialog)
+		if(charactersArray.get(i).dialog)
 		{
 			changeCharacterDirection(i,player,charactersArray);
 		}
 		else if(!dialogs.isDialog())
 		{
-			charactersArray[i].dialog = false;
+			charactersArray.get(i).dialog = false;
 		}
 	}
 
-	private void changeCharacterDirection(int i,Player player,AbstractCharacter[] charactersArray)
+	private void changeCharacterDirection(int i, Player player, List<AbstractCharacter> charactersArray)
 	{
 		switch (player.direction)
 		{
 			case FourDirections.UP:
-				charactersArray[i].direction = FourDirections.DOWN;
-				charactersArray[i].animations.setAnimationByIndex(4);
+				charactersArray.get(i).direction = FourDirections.DOWN;
+				charactersArray.get(i).animations.setAnimationByIndex(4);
 				break;
 			case FourDirections.DOWN:
-				charactersArray[i].direction = FourDirections.UP;
-				charactersArray[i].animations.setAnimationByIndex(0);
+				charactersArray.get(i).direction = FourDirections.UP;
+				charactersArray.get(i).animations.setAnimationByIndex(0);
 				break;
 			case FourDirections.LEFT:
-				charactersArray[i].direction = FourDirections.RIGHT;
-				charactersArray[i].animations.setAnimationByIndex(6);
+				charactersArray.get(i).direction = FourDirections.RIGHT;
+				charactersArray.get(i).animations.setAnimationByIndex(6);
 				break;
 			case FourDirections.RIGHT:
-				charactersArray[i].direction = FourDirections.LEFT;
-				charactersArray[i].animations.setAnimationByIndex(2);
+				charactersArray.get(i).direction = FourDirections.LEFT;
+				charactersArray.get(i).animations.setAnimationByIndex(2);
 				break;
 		}
 	}
 
-	private boolean validateCharacterDialogCheck(int i, AbstractCharacter[] charactersArray,Player player)
+	private boolean validateCharacterDialogCheck(int i, List<AbstractCharacter> entities,Player player)
 	{
-		return charactersArray[i] != null && !(charactersArray[i] instanceof Player)
-				&& player.dialogArea.intersects(charactersArray[i].collider);
+		return entities.get(i) != null && !(entities.get(i) instanceof Player)
+				&& player.dialogArea.intersects(entities.get(i).collider);
 	}
 
-	public void draw(Graphics2D graphics2d,AbstractCharacter[] charactersArray)
+	public void draw(Graphics2D graphics2d, List<AbstractCharacter> charactersArray)
 	{
 		//draw Dialog Text bottom info
 		if(dialog)
@@ -97,7 +98,7 @@ public final class DialogManager
 			dialog = false;
 		}
 		//draw dialogs by character name
-		dialogs.draw(graphics2d,charactersArray[index].name);
+		dialogs.draw(graphics2d,charactersArray.get(index).name);
 	}
 
 	public void addDialog(String characterName, String text)

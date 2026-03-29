@@ -35,10 +35,10 @@ public abstract class AbstractScene implements Scene
 	protected List<Collider> transitions ;
 	
 	/** The characters. */
-	protected List<AbstractCharacter> characters = new ArrayList<>();
+	protected final List<AbstractCharacter> characters = new ArrayList<>();
 	
 	/** The characters array. */
-	protected AbstractCharacter[] charactersArray = new AbstractCharacter[10];
+	protected final List<AbstractCharacter> entities = new ArrayList<>();
 	
 	/** The game. */
 	protected Game game;
@@ -113,13 +113,13 @@ public abstract class AbstractScene implements Scene
 
 	private void updateDialog()
 	{
-		dialogManager.updateDialog(charactersArray,player);
+		dialogManager.updateDialog(entities,player);
 	}
 
 
 	public void updateCharactersCollisions()
 	{
-		for (AbstractCharacter abstractCharacter : charactersArray)
+		for (AbstractCharacter abstractCharacter : entities)
 		{
 			if(abstractCharacter != null)
 			{
@@ -132,7 +132,7 @@ public abstract class AbstractScene implements Scene
 	
 	protected void collision(AbstractCharacter character)
 	{
-		for (int i = 0; i < charactersArray.length; i++)
+		for (int i = 0; i < entities.size(); i++)
 		{
 			if(validateCharacterCollisionChecker(character, i))
 			{
@@ -144,9 +144,9 @@ public abstract class AbstractScene implements Scene
 
 	private boolean validateCharacterCollisionChecker(AbstractCharacter character, int i)
 	{
-		return character != charactersArray[i] && charactersArray[i] != null 
-				&& character.collider.intersects(charactersArray[i].collider) 
-				&& character.solid && charactersArray[i].solid;
+		return character != entities.get(i) && entities.get(i) != null
+				&& character.collider.intersects(entities.get(i).collider)
+				&& character.solid && entities.get(i).solid;
 	}
 
 	public void updateCharacter(AbstractCharacter abstractCharacter)

@@ -42,7 +42,7 @@ public final class HomeScene extends AbstractScene
 		
 		Vector2I pos = tmxLoader.getVector2IListFromPropertyTagName("Player").getFirst();
 		player.position.set(pos.getX(), pos.getY());
-		charactersArray[0] = player;
+		entities.add(player);
 		
 		transition.setName(name);
 	

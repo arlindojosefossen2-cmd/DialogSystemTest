@@ -47,7 +47,7 @@ public final class IslandScene extends AbstractScene
 		layers = tmxLoader.getLayers();
 		
 		player.position = tmxLoader.getVector2IListFromPropertyTagName("Player").getFirst();
-		charactersArray[0] = player;
+		entities.add(player);
 		
 		//testing a entities
 		EntityPlayer entityTest = new EntityPlayer();
@@ -55,7 +55,7 @@ public final class IslandScene extends AbstractScene
 		
 		entityTest.position.set(player.position.getX()-64,player.position.getY()+64);
 		entityTest.name = "Paul";
-		charactersArray[1] = entityTest;
+		entities.add(entityTest);
 		
 		this.addDialog(entityTest.name,"Testing notting!")
 		.addDialog(entityTest.name,"Testing again!")
@@ -69,7 +69,7 @@ public final class IslandScene extends AbstractScene
 		entityTest.start();
 		
 		entityTest.position.set(player.position.getX()-128,player.position.getY()+96);
-		charactersArray[2] = entityTest;
+		entities.add(entityTest);
 		entityTest.name = "Joan";
 		
 		 this.addDialog(entityTest.name,"Testing notting!")
