@@ -35,10 +35,10 @@ public abstract class AbstractScene implements Scene
 	protected List<Collider> transitions ;
 	
 	/** The characters. */
-	protected final List<AbstractCharacter> characters = new ArrayList<>();
+	protected List<AbstractCharacter> characters = new ArrayList<>();
 	
 	/** The characters array. */
-	protected final List<AbstractCharacter> entities = new ArrayList<>();
+	protected List<AbstractCharacter> entities = new ArrayList<>();
 	
 	/** The game. */
 	protected Game game;
