@@ -2,10 +2,11 @@ package br.com.ajf.dialogsystem.entity;
 
 import br.com.ajf.game.animation.IAnimationManager;
 import br.com.ajf.game.character.AbstractCharacter;
-import br.com.ajf.game.character.AbstractCharacterMoviment;
+
+import br.com.ajf.game.character.AbstractCharacterMovement;
 import br.com.ajf.game.moviment.FourDirections;
 
-public final class EntityMoviment extends AbstractCharacterMoviment
+public final class EntityMoviment extends AbstractCharacterMovement
 {
 
 	public EntityMoviment(AbstractCharacter character)

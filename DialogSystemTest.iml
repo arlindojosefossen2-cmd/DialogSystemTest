@@ -11,7 +11,7 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://$USER_HOME$/Documents/testgame/Game1.2.jar!/" />
+          <root url="jar://$USER_HOME$/Desktop/java/Documents/jar/GameModel2D.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />

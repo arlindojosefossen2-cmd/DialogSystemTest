@@ -36,8 +36,8 @@ public final class CityScene extends AbstractScene
 		name = "City";
 		TMXLoader tmxLoader = new TMXLoader("/maps/city2.tmx");
 		tileManager = tmxLoader.getTileManager();
-		colliders = tmxLoader.getRectsCollidersByAtributeName(COLLISION);
-		transitions = tmxLoader.getRectsCollidersByAtributeName(TRASITION);
+		colliders = tmxLoader.getRectanglesCollidersByAttributeName(COLLISION);
+		transitions = tmxLoader.getRectanglesCollidersByAttributeName(TRASITION);
 		
 		layers = tmxLoader.getLayers();
 		

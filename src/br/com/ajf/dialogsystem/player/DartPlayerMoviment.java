@@ -2,14 +2,15 @@ package br.com.ajf.dialogsystem.player;
 
 import br.com.ajf.game.animation.IAnimationManager;
 import br.com.ajf.game.character.AbstractCharacter;
-import br.com.ajf.game.character.AbstractCharacterMoviment;
+
+import br.com.ajf.game.character.AbstractCharacterMovement;
 import br.com.ajf.game.moviment.FourDirections;
 import br.com.ajf.game.player.Player;
 
 /**
  * The Class CharacterMovement.
  */
-public final class DartPlayerMoviment extends AbstractCharacterMoviment
+public final class DartPlayerMoviment extends AbstractCharacterMovement
 {
 	public DartPlayerMoviment(AbstractCharacter character)
 	{

@@ -41,8 +41,8 @@ public final class IslandScene extends AbstractScene
 		
 		tileManager = tmxLoader.getTileManager();
 		
-		colliders = tmxLoader.getRectsCollidersByAtributeName(COLLISION);
-		transitions = tmxLoader.getRectsCollidersByAtributeName(TRASITION);
+		colliders = tmxLoader.getRectanglesCollidersByAttributeName(COLLISION);
+		transitions = tmxLoader.getRectanglesCollidersByAttributeName(TRASITION);
 		
 		layers = tmxLoader.getLayers();
 		

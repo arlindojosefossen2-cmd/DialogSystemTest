@@ -137,7 +137,7 @@ public abstract class AbstractScene implements Scene
 			if(validateCharacterCollisionChecker(character, i))
 			{
 				character.collision = true;
-				character.preventMoviment(game.delta());
+				character.preventMovement(game.delta());
 			}
 		}
 	}
@@ -170,7 +170,7 @@ public abstract class AbstractScene implements Scene
 
 			if(CharacterCollisions.isCollisionBYCharacterTypeName(abstractCharacter, colliders,COLLISION))
 			{
-				abstractCharacter.preventMoviment(game.delta());
+				abstractCharacter.preventMovement(game.delta());
 			}
 				
 			characters.add(abstractCharacter);

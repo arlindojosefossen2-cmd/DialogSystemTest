@@ -35,8 +35,8 @@ public final class HomeScene extends AbstractScene
 		name = "Home";
 		TMXLoader tmxLoader = new TMXLoader("/maps/home2.tmx");
 		tileManager = tmxLoader.getTileManager();
-		colliders = tmxLoader.getRectsCollidersByAtributeName(COLLISION);
-		transitions = tmxLoader.getRectsCollidersByAtributeName(TRASITION);
+		colliders = tmxLoader.getRectanglesCollidersByAttributeName(COLLISION);
+		transitions = tmxLoader.getRectanglesCollidersByAttributeName(TRASITION);
 		
 		layers = tmxLoader.getLayers();
 		

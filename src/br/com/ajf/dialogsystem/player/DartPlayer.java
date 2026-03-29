@@ -18,7 +18,7 @@ public final class DartPlayer extends Player
 		drawUI = new DrawPlayerUI();
 		
 		addCharacterInput(new DartPlayerInputs(this));
-		addCharacterMoviment(new DartPlayerMoviment(this));
+		addCharacterMovement(new DartPlayerMoviment(this));
 		
 		SCREEN_X = GameLauncher.WIDTH/2-64/2;
 		SCREEN_Y = GameLauncher.HEIGHT/2-64/2;
@@ -28,7 +28,7 @@ public final class DartPlayer extends Player
 		
 		collider = new Collider(1,0, solidAreaX,solidAreaY, 20, 20, "Player");
 		
-		animations = new CharacterLoader().loadeAnimationFromXMLFile("/player/player.xml", this);
+		animations = new CharacterLoader().loadAnimationFromXMLFile("/player/player.xml", this);
 	}
 
 	public void drawUI(Graphics2D graphics2d)
