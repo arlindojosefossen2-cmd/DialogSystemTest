@@ -1,5 +1,6 @@
 package br.com.ajf.dialogsystem.scenes;
 
+import br.com.ajf.dialogsystem.enemies.Slime;
 import br.com.ajf.dialogsystem.entity.EntityPlayer;
 import br.com.ajf.game.character.AbstractCharacter;
 import br.com.ajf.game.collision.Collider;
@@ -85,6 +86,12 @@ public final class IslandScene extends AbstractScene
 		sceneTransition = new ChangeIslandScene();
 		
 		transition.setName(name);
+
+		Slime slime = new Slime();
+		slime.start();
+		slime.position.set(player.position.getX()-96,player.position.getY()-96);
+
+		enemies.add(slime);
 		
 		return this;
 	}

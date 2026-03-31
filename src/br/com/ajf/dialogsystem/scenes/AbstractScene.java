@@ -37,9 +37,12 @@ public abstract class AbstractScene implements Scene
 	/** The characters. */
 	protected List<AbstractCharacter> characters = new ArrayList<>();
 	
-	/** The characters array. */
+	/** The entities array. */
 	protected List<AbstractCharacter> entities = new ArrayList<>();
-	
+
+	/** The enemies array. */
+	protected List<AbstractCharacter> enemies = new ArrayList<>();
+
 	/** The game. */
 	protected Game game;
 	
@@ -102,12 +105,32 @@ public abstract class AbstractScene implements Scene
 		updateCharactersCollisions();
 
 		updateDialog();
-		
+
+		updateEnemies();
+
 		characters.sort(alternator);
 		
 		if(transition != null)
 		{
 			transition.update(game.delta());
+		}
+	}
+
+	private void updateEnemies()
+	{
+		for (AbstractCharacter enemy : enemies)
+		{
+			if(enemy != null)
+			{
+				enemy.collision = false;
+				enemy.update(game.delta());
+				characters.add(enemy);
+
+				if(CharacterCollisions.isCollisionBYCharacterTypeName(enemy, colliders,COLLISION))
+				{
+					enemy.preventMovement(game.delta());
+				}
+			}
 		}
 	}
 
