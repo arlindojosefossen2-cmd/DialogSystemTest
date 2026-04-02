@@ -126,6 +126,15 @@ public abstract class AbstractScene implements Scene
 				enemy.update(game.delta());
 				characters.add(enemy);
 
+				for (AbstractCharacter abstractCharacter : this.entities)
+				{
+					if(enemy.collider.intersects(abstractCharacter.collider))
+					{
+						enemy.preventMovement(game.delta());
+						abstractCharacter.preventMovement(game.delta());
+					}
+				}
+
 				if(CharacterCollisions.isCollisionBYCharacterTypeName(enemy, colliders,COLLISION))
 				{
 					enemy.preventMovement(game.delta());
@@ -238,6 +247,11 @@ public abstract class AbstractScene implements Scene
 	public AbstractScene addDialog(String characterName,String text)
 	{
 		this.dialogManager.addDialog(characterName,text);
+		return this;
+	}
+	public AbstractScene addDialog(String characterName,String... texts)
+	{
+		this.dialogManager.addDialog(characterName,texts);
 		return this;
 	}
 	

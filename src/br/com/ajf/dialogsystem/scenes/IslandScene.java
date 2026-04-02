@@ -58,12 +58,7 @@ public final class IslandScene extends AbstractScene
 		entityTest.name = "Paul";
 		entities.add(entityTest);
 		
-		this.addDialog(entityTest.name,"Testing notting!")
-		.addDialog(entityTest.name,"Testing again!")
-		.addDialog(entityTest.name,"Testing again!\nTesting\nNothing")
-		.addDialog(entityTest.name,"Testing again!\nNothing Again...again!")
-		.addDialog(entityTest.name,"Testing again!")
-		.addDialog(entityTest.name,"Testing again!");
+		this.addDialog(entityTest.name,"Hi! My name is "+entityTest.name+"\nI am a dumpy of you.");
 		
 		//testing more than one with dialog system
 		entityTest = new EntityPlayer();
@@ -73,14 +68,7 @@ public final class IslandScene extends AbstractScene
 		entities.add(entityTest);
 		entityTest.name = "Joan";
 		
-		 this.addDialog(entityTest.name,"Testing notting!")
-		.addDialog(entityTest.name,"Testing again!")
-		.addDialog(entityTest.name,"Testing again!\nTesting\nother again.")
-		.addDialog(entityTest.name,"Testing again!\nfinished again!")
-		.addDialog(entityTest.name,"Testing again!")
-		.addDialog(entityTest.name,"Testing again!")
-		.addDialog(entityTest.name,"Testing again!")
-		.addDialog(entityTest.name,"Default\nTesting\nAgain!");
+		 this.addDialog(entityTest.name,"Hi!I am a dumpy!\nbut may name is "+entityTest.name+"\nNice to meet you.");
 		//end testing
 		
 		sceneTransition = new ChangeIslandScene();

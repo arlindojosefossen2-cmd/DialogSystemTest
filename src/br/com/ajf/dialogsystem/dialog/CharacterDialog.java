@@ -36,6 +36,18 @@ public final class CharacterDialog
 		
 		return this;
 	}
+	public CharacterDialog add(String name,String...texts)
+	{
+		dialog.add(name,texts);
+		BufferedImage img = images.get(name);
+
+		if(img == null)
+		{
+			img = Game.LOADER.loadBufferedImage("/player/"+name+".png");
+			images.put(name, img);
+		}
+		return this;
+	}
 	
 	public void draw(Graphics2D graphics2d,String name)
 	{

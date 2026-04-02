@@ -4,10 +4,7 @@ import java.awt.Color;
 import java.awt.Font;
 import java.awt.Graphics2D;
 import java.awt.event.KeyEvent;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 import br.com.ajf.game.input.GameInput;
 
@@ -36,6 +33,25 @@ public final class Dialog
 		else
 		{
 			dialogList.add(text);
+		}
+		return this;
+	}
+
+	public Dialog add(String name,String... texts)
+	{
+		List<String> dialogList = this.dialogs.get(name);
+
+		if(dialogList == null)
+		{
+			dialogList = new ArrayList<>();
+
+			Collections.addAll(dialogList, texts);
+
+			this.dialogs.put(name, dialogList);
+		}
+		else
+		{
+			Collections.addAll(dialogList, texts);
 		}
 		return this;
 	}

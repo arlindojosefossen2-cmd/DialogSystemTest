@@ -105,4 +105,8 @@ public final class DialogManager
 	{
 		this.dialogs.add(characterName,text);
 	}
+	public void addDialog(String characterName, String... texts)
+	{
+		this.dialogs.add(characterName,texts);
+	}
 }
