@@ -21,6 +21,6 @@ public final class GameLauncher
 	{
 		Game game = new Game(TITLE, WIDTH, HEIGHT, IGameThreadManager.GAME_THREAD_TIMER_TASK);
 		game.addScene(new IslandScene(game,new DartPlayer()).start().setSceneName("Island"));
-		game.init(IGameThreadManager.FPS_30);
+		game.init(IGameThreadManager.FPS_60);
 	}
 }

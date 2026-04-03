@@ -15,7 +15,6 @@ public final class DartPlayerMoviment extends AbstractCharacterMovement
 	public DartPlayerMoviment(AbstractCharacter character)
 	{
 		super(character);
-		
 	}
 
 	/**
@@ -44,7 +43,7 @@ public final class DartPlayerMoviment extends AbstractCharacterMovement
 	 * Moving.
 	 *
 	 */
-	private void moving(IAnimationManager animations)
+	private void moving(IAnimationManager animations,float delta)
 	{
 		((Player)character).dialogArea.setX(character.position.getX());
 		((Player)character).dialogArea.setY(character.position.getY());
@@ -52,25 +51,25 @@ public final class DartPlayerMoviment extends AbstractCharacterMovement
 		switch(character.direction)
 		{
 			case FourDirections.UP:
-				character.position.setY((character.position.getY() - character.velocity.getY()));
+				character.position.setY(Math.round(character.position.getY() - character.velocity.getY()*delta));
 				animations.setAnimationByIndex(1);
 				((Player)character).dialogArea.setY(character.position.getY()-character.getHeight()/2);
 			
 				break;
 			case FourDirections.DOWN:
-				character.position.setY((character.position.getY() + character.velocity.getY()));
+				character.position.setY(Math.round(character.position.getY() + character.velocity.getY()*delta));
 				animations.setAnimationByIndex(5);
 				((Player)character).dialogArea.setY(character.position.getY()+character.getHeight()/2);
 				
 				break;
 			case FourDirections.LEFT:
-				character.position.setX((character.position.getX() - character.velocity.getX()));
+				character.position.setX(Math.round(character.position.getX() - character.velocity.getX()*delta));
 				animations.setAnimationByIndex(3);
 				((Player)character).dialogArea.setX(character.position.getX()-character.getWidth()/2);
 				
 				break;
 			case FourDirections.RIGHT:
-				character.position.setX((character.position.getX() + character.velocity.getX()));
+				character.position.setX(Math.round(character.position.getX() + character.velocity.getX()*delta));
 				animations.setAnimationByIndex(7);
 				((Player)character).dialogArea.setX(character.position.getX()+character.getWidth()/2);
 				
@@ -88,16 +87,16 @@ public final class DartPlayerMoviment extends AbstractCharacterMovement
 		switch(character.direction)
 		{
 			case FourDirections.UP:
-				character.position.setY((character.position.getY() + character.velocity.getY()));
+				character.position.setY(Math.round(character.position.getY() + character.velocity.getY()*delta));
 				break;
 			case FourDirections.DOWN:
-				character.position.setY((character.position.getY() - character.velocity.getY()));
+				character.position.setY(Math.round(character.position.getY() - character.velocity.getY()*delta));
 				break;
 			case FourDirections.LEFT:
-				character.position.setX((character.position.getX() + character.velocity.getX()));
+				character.position.setX(Math.round(character.position.getX() + character.velocity.getX()*delta));
 				break;
 			case FourDirections.RIGHT:
-				character.position.setX(character.position.getX() - (character.velocity.getX()));
+				character.position.setX(Math.round(character.position.getX() - (character.velocity.getX()*delta)));
 				break;
 		}
 	}
@@ -111,7 +110,7 @@ public final class DartPlayerMoviment extends AbstractCharacterMovement
 	{	
 		if(character.moving && !character.collision)
 		{
-			moving(animations);
+			moving(animations,delta);
 		}
 		else
 		{

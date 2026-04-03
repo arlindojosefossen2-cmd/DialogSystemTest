@@ -2,7 +2,7 @@
 <!-- Load All Animations of one SpriteSheets more efficient less access of files resources-->
 <manager name = "Blue-Slime">
 
-	<velocity xVelocity ='2' yVelocity ='2'></velocity>
+	<velocity xVelocity ='60' yVelocity ='60'></velocity>
 	<animations path="/enemies/slime-blue.png" scale='2' rows='4' columns='3' frames='12'>
 	
 		<animation init = '0' frames = '3' interval = '0.2' looping = "true" type="normal_animation" ></animation>

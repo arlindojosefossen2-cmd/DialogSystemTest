@@ -19,21 +19,21 @@ public class SlimeMoviment extends AbstractCharacterMovement
 			switch(character.direction)
 			{
 				case FourDirections.UP:
-					character.position.setY((character.position.getY() - character.velocity.getY()));
+					character.position.setY(Math.round(character.position.getY() - character.velocity.getY()*delta));
 					animations.setAnimationByIndex(3);
 
 					break;
 				case FourDirections.DOWN:
-					character.position.setY((character.position.getY() + character.velocity.getY()));
+					character.position.setY(Math.round(character.position.getY() + character.velocity.getY()*delta));
 					animations.setAnimationByIndex(2);
 					break;
 				case FourDirections.LEFT:
-					character.position.setX((character.position.getX() - character.velocity.getX()));
+					character.position.setX(Math.round(character.position.getX() - character.velocity.getX()*delta));
 					animations.setAnimationByIndex(1);
 
 					break;
 				case FourDirections.RIGHT:
-					character.position.setX((character.position.getX() + character.velocity.getX()));
+					character.position.setX(Math.round(character.position.getX() + character.velocity.getX()*delta));
 					animations.setAnimationByIndex(0);
 
 					break;
@@ -67,16 +67,16 @@ public class SlimeMoviment extends AbstractCharacterMovement
 		switch(character.direction)
 		{
 			case FourDirections.UP:
-				character.position.setY((character.position.getY() + character.velocity.getY()));
+				character.position.setY(Math.round(character.position.getY() + character.velocity.getY()*delta));
 				break;
 			case FourDirections.DOWN:
-				character.position.setY((character.position.getY() - character.velocity.getY()));
+				character.position.setY(Math.round(character.position.getY() - character.velocity.getY()*delta));
 				break;
 			case FourDirections.LEFT:
-				character.position.setX((character.position.getX() + character.velocity.getX()));
+				character.position.setX(Math.round(character.position.getX() + character.velocity.getX()*delta));
 				break;
 			case FourDirections.RIGHT:
-				character.position.setX(character.position.getX() - (character.velocity.getX()));
+				character.position.setX(Math.round(character.position.getX() - character.velocity.getX()*delta));
 				break;
 		}
 	}

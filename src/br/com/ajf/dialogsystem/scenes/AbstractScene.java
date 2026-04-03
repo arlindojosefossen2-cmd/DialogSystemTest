@@ -120,25 +120,39 @@ public abstract class AbstractScene implements Scene
 	{
 		for (AbstractCharacter enemy : enemies)
 		{
-			if(enemy != null)
+			updateEnemy(enemy);
+		}
+	}
+
+	private void updateEnemy(AbstractCharacter enemy)
+	{
+		if(enemy != null)
+		{
+			enemy.collision = false;
+			enemy.update(game.delta());
+			updateEnemyCollisionWithEntities(enemy);
+			updateEnemyTileCollision(enemy);
+			updateTransition(enemy);
+			characters.add(enemy);
+		}
+	}
+
+	private void updateEnemyTileCollision(AbstractCharacter enemy)
+	{
+		if(CharacterCollisions.isCollisionBYCharacterTypeName(enemy, colliders,COLLISION))
+		{
+			enemy.preventMovement(game.delta());
+		}
+	}
+
+	private void updateEnemyCollisionWithEntities(AbstractCharacter enemy)
+	{
+		for (AbstractCharacter abstractCharacter : this.entities)
+		{
+			if(enemy.collider.intersects(abstractCharacter.collider))
 			{
-				enemy.collision = false;
-				enemy.update(game.delta());
-				characters.add(enemy);
-
-				for (AbstractCharacter abstractCharacter : this.entities)
-				{
-					if(enemy.collider.intersects(abstractCharacter.collider))
-					{
-						enemy.preventMovement(game.delta());
-						abstractCharacter.preventMovement(game.delta());
-					}
-				}
-
-				if(CharacterCollisions.isCollisionBYCharacterTypeName(enemy, colliders,COLLISION))
-				{
-					enemy.preventMovement(game.delta());
-				}
+				enemy.preventMovement(game.delta());
+				abstractCharacter.preventMovement(game.delta());
 			}
 		}
 	}
@@ -186,26 +200,34 @@ public abstract class AbstractScene implements Scene
 		if(abstractCharacter != null)
 		{
 			abstractCharacter.update(this.game.delta());
-		
-			for(Collider collider : transitions)
-			{
-				if(collider != null)
-				{
-					sceneTransition(abstractCharacter, collider);
-					
-					for (int i = 0; i < layers.length; i++)
-					{
-						layerTransition(abstractCharacter, collider,i);						
-					}
-				}
-			}
+			updateTransition(abstractCharacter);
 
 			if(CharacterCollisions.isCollisionBYCharacterTypeName(abstractCharacter, colliders,COLLISION))
 			{
 				abstractCharacter.preventMovement(game.delta());
 			}
-				
+
 			characters.add(abstractCharacter);
+		}
+	}
+
+	private void updateTransition(AbstractCharacter abstractCharacter)
+	{
+		for(Collider collider : transitions)
+		{
+			if(collider != null)
+			{
+				sceneTransition(abstractCharacter, collider);
+				updateLayer(abstractCharacter, collider);
+			}
+		}
+	}
+
+	private void updateLayer(AbstractCharacter abstractCharacter, Collider collider)
+	{
+		for (int i = 0; i < layers.length; i++)
+		{
+			layerTransition(abstractCharacter, collider,i);
 		}
 	}
 

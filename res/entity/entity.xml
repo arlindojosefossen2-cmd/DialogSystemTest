@@ -2,7 +2,7 @@
 <!-- Load All Animations of one SpriteSheets more eficient less access of files resources-->
 <manager name = "Player">
 
-	<velocity xVelocity ='2' yVelocity ='2'></velocity>
+	<velocity xVelocity ='70' yVelocity ='70'></velocity>
 	<animations path="/player/Player-Shield-Sprite-Sheet.png" scale='1' rows='4' columns='10' frames='40'>
 	
 		<animation init = '0' frames = '2' interval = '0.5' looping = "true" type="ping_pong_animation" ></animation>

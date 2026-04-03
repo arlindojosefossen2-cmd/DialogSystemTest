@@ -58,7 +58,8 @@ public final class IslandScene extends AbstractScene
 		entityTest.name = "Paul";
 		entities.add(entityTest);
 		
-		this.addDialog(entityTest.name,"Hi! My name is "+entityTest.name+"\nI am a dumpy of you.");
+		this.addDialog(entityTest.name,"Hi! My name is "+entityTest.name+"\nI am a dumpy of you.",
+				"I've Nothing to say\nfor you boy.Make your way.\nDead all the Blue-Slimes.");
 		
 		//testing more than one with dialog system
 		entityTest = new EntityPlayer();
