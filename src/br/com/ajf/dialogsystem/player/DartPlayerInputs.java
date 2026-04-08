@@ -62,7 +62,6 @@ public final class DartPlayerInputs extends AbstractCharacterInput
 		{
 			character.moving = false;
 		}
-
 	}
 
 	private boolean isAttacking()

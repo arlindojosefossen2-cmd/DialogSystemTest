@@ -17,13 +17,12 @@ public final class DebugScene
 		{
 			graphics2d.setColor(Color.yellow);
 			assert abstractCharacter != null;
-			graphics2d.drawRect(
-					Player.SCREEN_X - scene.player.position.getX() +
-							abstractCharacter.position.getX() + abstractCharacter.solidAreaX,
-					Player.SCREEN_Y - scene.player.position.getY() +
-							abstractCharacter.position.getY() + abstractCharacter.solidAreaY,
-					abstractCharacter.collider.getWidth(),
-					abstractCharacter.collider.getHeight());
+			graphics2d.drawRect(Player.SCREEN_X - scene.player.position.getX() +
+							       abstractCharacter.position.getX() + abstractCharacter.solidAreaX,
+					            Player.SCREEN_Y - scene.player.position.getY() +
+							       abstractCharacter.position.getY() + abstractCharacter.solidAreaY,
+					               abstractCharacter.collider.getWidth(),
+					               abstractCharacter.collider.getHeight());
 		}
 	}
 
@@ -41,28 +40,28 @@ public final class DebugScene
 				{
 					graphics2d.setColor(Color.RED);
 					graphics2d.drawRect(
-							rect.getX() - scene.player.position.getX() + Player.SCREEN_X,
-							rect.getY() - scene.player.position.getY() + Player.SCREEN_Y,
-							rect.getWidth(),
-							rect.getHeight());
+							rect.getX()  + Player.SCREEN_X - scene.player.position.getX(),
+							rect.getY()  + Player.SCREEN_Y - scene.player.position.getY(),
+							   rect.getWidth(),
+							   rect.getHeight());
 				}
 			}
 
 			//draw dialog area for debug
 			graphics2d.setColor(Color.GREEN);
 			graphics2d.drawRect(scene.player.dialogArea.getX()+Player.SCREEN_X-scene.player.position.getX(),
-					scene.player.dialogArea.getY()-scene.player.position.getY()+Player.SCREEN_Y,
-					scene.player.dialogArea.getWidth(), scene.player.dialogArea.getHeight());
+								scene.player.dialogArea.getY()+Player.SCREEN_Y-scene.player.position.getY(),
+					               scene.player.dialogArea.getWidth(), scene.player.dialogArea.getHeight());
 
-			if(scene.player.attacking)
-			{
-				graphics2d.setColor(Color.RED);
-				graphics2d.fillRect(scene.player.attackArea.getX(),
-						scene.player.attackArea.getY(),
-						scene.player.attackArea.getWidth(),
-						scene.player.attackArea.getHeight());
+				//draw player attacking area for debug
+				if(scene.player.attacking)
+				{
+					graphics2d.setColor(Color.RED);
+					graphics2d.fillRect(scene.player.attackArea.getX() + Player.SCREEN_X - scene.player.position.getX(),
+										scene.player.attackArea.getY() + Player.SCREEN_Y - scene.player.position.getY(),
+										   scene.player.attackArea.getWidth(),
+										   scene.player.attackArea.getHeight());
+				}
 			}
-
 		}
-	}
 }
