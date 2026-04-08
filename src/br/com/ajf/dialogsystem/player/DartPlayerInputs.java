@@ -6,6 +6,7 @@ import br.com.ajf.game.character.AbstractCharacter;
 import br.com.ajf.game.character.AbstractCharacterInput;
 import br.com.ajf.game.input.GameInput;
 import br.com.ajf.game.moviment.FourDirections;
+import br.com.ajf.game.player.Player;
 
 /**
  * The Class CharacterInputs.
@@ -26,31 +27,47 @@ public final class DartPlayerInputs extends AbstractCharacterInput
 	 * Update inputs.
 	 */
 	public void updateInputs()
-	{	
+	{
+		if(isAttacking())
+		{
+			character.moving = false;
+			((Player)character).attacking = true;
+		}
+
 		if(isUp())
 		{
 			character.direction = FourDirections.UP;
 			character.moving = true;
+			((Player)character).attacking = false;
 		}
 		else if(isDown())
 		{
 			character.direction = FourDirections.DOWN;
 			character.moving = true;
+			((Player)character).attacking = false;
 		}
 		else if(isLeft())
 		{
 			character.direction = FourDirections.LEFT;
 			character.moving = true;
+			((Player)character).attacking = false;
 		}
 		else if(isRight())
 		{
 			character.direction = FourDirections.RIGHT;
 			character.moving = true;
+			((Player)character).attacking = false;
 		}
 		else
 		{
 			character.moving = false;
 		}
+
+	}
+
+	private boolean isAttacking()
+	{
+		return GameInput.keyDownOnce(KeyEvent.VK_X);
 	}
 
 	/**
