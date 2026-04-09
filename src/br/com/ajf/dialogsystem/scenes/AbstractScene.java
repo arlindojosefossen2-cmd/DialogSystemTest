@@ -13,6 +13,7 @@ import br.com.ajf.game.character.CharacterOrderLayer;
 import br.com.ajf.game.collision.Collider;
 import br.com.ajf.game.framework.Game;
 import br.com.ajf.game.input.GameInput;
+import br.com.ajf.game.player.Player;
 import br.com.ajf.game.scene.Scene;
 import br.com.ajf.game.tile.ITileManager;
 
@@ -96,8 +97,6 @@ public abstract class AbstractScene implements Scene
 		if(GameInput.keyDownOnce(KeyEvent.VK_B))
 		{
 			DebugScene.debug = !DebugScene.debug;
-			//testing a simple life bar
-			player.health.setLife(player.health.getLife()-1);
 		}
 		
 		characters.clear();
@@ -118,16 +117,30 @@ public abstract class AbstractScene implements Scene
 
 	private void updateEnemies()
 	{
-		for (AbstractCharacter enemy : enemies)
+		for (int i = 0;i < enemies.size();i++)
 		{
+			AbstractCharacter enemy = enemies.get(i);
 			updateEnemy(enemy);
 		}
 	}
 
 	private void updateEnemy(AbstractCharacter enemy)
 	{
+		if (enemy.health.getLife() <= 0)
+		{
+			enemies.remove(enemy);
+			return;
+		}
+
 		if(enemy != null)
 		{
+			if(player.attackArea.intersects(enemy.collider))
+			{
+				enemy.preventMovement(game.delta()*10);
+				enemy.health.setLife(enemy.health.getLife()-1);
+			}
+
+
 			enemy.collision = false;
 			enemy.update(game.delta());
 			updateEnemyCollisionWithEntities(enemy);
@@ -151,8 +164,24 @@ public abstract class AbstractScene implements Scene
 		{
 			if(enemy.collider.intersects(abstractCharacter.collider))
 			{
-				enemy.preventMovement(game.delta());
-				abstractCharacter.preventMovement(game.delta());
+				if(abstractCharacter instanceof Player)
+				{
+					enemy.preventMovement(game.delta()*20);
+					abstractCharacter.preventMovement(game.delta()*20);
+					abstractCharacter.health.setLife(abstractCharacter.health.getLife()-1);
+					enemy.health.setLife(enemy.health.getLife()-1);
+				}
+				else
+				{
+					enemy.preventMovement(game.delta());
+					abstractCharacter.preventMovement(game.delta());
+				}
+
+				if(player.health.getLife() <= 0)
+				{
+					//add player dead
+					System.out.println("Player is dead!");
+				}
 			}
 		}
 	}

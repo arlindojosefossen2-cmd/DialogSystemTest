@@ -53,25 +53,25 @@ public final class DartPlayerMoviment extends AbstractCharacterMovement
 			case FourDirections.UP:
 				character.position.setY(Math.round(character.position.getY() - character.velocity.getY()*delta));
 				animations.setAnimationByIndex(1);
-				((Player)character).dialogArea.setY(character.position.getY()-character.getHeight()/2);
+				((Player)character).dialogArea.setY(character.getCenterPositionY()-character.getHeight()/2);
 			
 				break;
 			case FourDirections.DOWN:
 				character.position.setY(Math.round(character.position.getY() + character.velocity.getY()*delta));
 				animations.setAnimationByIndex(5);
-				((Player)character).dialogArea.setY(character.position.getY()+character.getHeight()/2);
+				((Player)character).dialogArea.setY(character.getCenterPositionY());
 				
 				break;
 			case FourDirections.LEFT:
 				character.position.setX(Math.round(character.position.getX() - character.velocity.getX()*delta));
 				animations.setAnimationByIndex(3);
-				((Player)character).dialogArea.setX(character.position.getX()-character.getWidth()/2);
+				((Player)character).dialogArea.setX(character.getCenterPositionX()-character.getWidth()/2);
 				
 				break;
 			case FourDirections.RIGHT:
 				character.position.setX(Math.round(character.position.getX() + character.velocity.getX()*delta));
 				animations.setAnimationByIndex(7);
-				((Player)character).dialogArea.setX(character.position.getX()+character.getWidth()/2);
+				((Player)character).dialogArea.setX(character.getCenterPositionX());
 				
 				break;
 		}
@@ -126,40 +126,40 @@ public final class DartPlayerMoviment extends AbstractCharacterMovement
 
 	private void attacking(IAnimationManager animations)
 	{
-		((Player)character).attackArea.setX(character.position.getX() +
-											character.getWidth()/2 -
+		((Player)character).attackArea.setX(character.getCenterPositionX() -
 											((Player)character).attackArea.getWidth()/2);
 
-		((Player)character).attackArea.setY(character.position.getY() +
-											character.getHeight()/2 -
+		((Player)character).attackArea.setY(character.getCenterPositionY() -
 											((Player)character).attackArea.getHeight()/2);
 		switch(character.direction)
 		{
 			case FourDirections.UP:
 				animations.setAnimationByIndex(1);
-				((Player)character).attackArea.setY(character.position.getY() -
-													character.getHeight()/2 +
-													((Player)character).attackArea.getHeight());
+				((Player)character).attackArea.setY(character.position.getY() +
+													character.getHeight()/2 -
+													((Player)character).attackArea.getHeight()*2);
 				break;
 			case FourDirections.DOWN:
 				animations.setAnimationByIndex(5);
-				((Player)character).attackArea.setY(character.position.getY()+
-													character.getHeight()/2+
-													((Player)character).attackArea.getHeight()+16);
+				((Player)character).attackArea.setY(character.getCenterPositionY() +
+													((Player)character).attackArea.getHeight()*2);
 				break;
 			case FourDirections.LEFT:
 				animations.setAnimationByIndex(3);
-				((Player)character).attackArea.setX(character.position.getX()-character.getWidth()/2+((Player)character).attackArea.getWidth());
+				((Player)character).attackArea.setX(character.position.getX() +
+													character.getWidth()/2 -
+													((Player)character).attackArea.getWidth()*2);
 
 				break;
 			case FourDirections.RIGHT:
 				animations.setAnimationByIndex(7);
-				((Player)character).attackArea.setX(character.position.getX()+character.getWidth()/2+16);
+				((Player)character).attackArea.setX(character.getCenterPositionX()+
+													((Player)character).attackArea.getWidth());
 
 				break;
 		}
 
-		//todo add attack animations need change the index
+		//add attack animations need change the index
 		if(animations.isFinished(1) || animations.isFinished(5) || animations.isFinished(3) || animations.isFinished(7))
 		{
 			((Player) character).attacking = false;

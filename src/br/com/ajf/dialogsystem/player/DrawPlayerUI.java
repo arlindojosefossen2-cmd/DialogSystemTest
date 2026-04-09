@@ -8,7 +8,6 @@ import br.com.ajf.game.player.Player;
 
 public final class DrawPlayerUI implements IDrawPlayerUI
 {
-
 	public static final int STYLE_FONT_32 = 32;
 
 	@Override
