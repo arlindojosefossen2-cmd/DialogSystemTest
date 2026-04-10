@@ -3,7 +3,7 @@
 <manager name = "Player">
 
 	<velocity xVelocity ='100' yVelocity ='100'></velocity>
-	<animations path="/player/Player-Shield-Sprite-Sheet.png" scale='1' rows='4' columns='10' frames='40'>
+	<animations path="/player/Player-Shield-Sprite-Sheet.png" scale='1' rows='7' columns='10' frames='65'>
 	
 		<animation init = '0' frames = '2' interval = '0.5' looping = "true" type="normal_animation" ></animation>
 		<animation init = '2' frames = '7' interval = '0.1' looping = "true" type="normal_animation"></animation>
@@ -13,6 +13,12 @@
 		<animation init = '23' frames = '7' interval = '0.1' looping = "true" type="normal_animation"></animation>
 		<animation init = '30' frames = '2' interval = '0.5' looping = "true" type="normal_animation"></animation>
 		<animation init = '33' frames = '7' interval = '0.1' looping = "true" type="normal_animation"></animation>
-		
-	</animations>
+
+        <animation init = '40' frames = '5' interval = '0.075' looping = "false" type="normal_animation"></animation>
+        <animation init = '45' frames = '5' interval = '0.075' looping = "false" type="normal_animation"></animation>
+        <animation init = '50' frames = '5' interval = '0.075' looping = "false" type="normal_animation"></animation>
+        <animation init = '55' frames = '5' interval = '0.075' looping = "false" type="normal_animation"></animation>
+        <animation init = '60' frames = '5' interval = '0.1' looping = "false" type="normal_animation"></animation>
+
+    </animations>
 </manager>

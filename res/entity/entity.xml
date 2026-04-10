@@ -3,7 +3,7 @@
 <manager name = "Player">
 
 	<velocity xVelocity ='70' yVelocity ='70'></velocity>
-	<animations path="/player/Player-Shield-Sprite-Sheet.png" scale='1' rows='4' columns='10' frames='40'>
+	<animations path="/player/Player-Shield-Sprite-Sheet.png" scale='1' rows='7' columns='10' frames='65'>
 	
 		<animation init = '0' frames = '2' interval = '0.5' looping = "true" type="ping_pong_animation" ></animation>
 		<animation init = '2' frames = '7' interval = '0.1' looping = "true" type="normal_animation"></animation>

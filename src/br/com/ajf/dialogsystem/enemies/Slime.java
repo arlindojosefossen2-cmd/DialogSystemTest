@@ -14,10 +14,10 @@ public class Slime extends AbstractCharacter
 		addCharacterInput(new SlimeInput(this));
 		addCharacterMovement(new SlimeMoviment(this));
 
-		solidAreaX = 22;
-		solidAreaY = 32;
+		solidAreaX = 16;
+		solidAreaY = 16;
 
-		collider = new Collider(0,0, solidAreaX,solidAreaY, 20, 20, "Enemy");
+		collider = new Collider(0,0, 16+16,16+16, 32, 32, "Enemy");
 
 		animations = new CharacterLoader().loadAnimationFromXMLFile("/enemies/slime-blue.xml", this);
 	}

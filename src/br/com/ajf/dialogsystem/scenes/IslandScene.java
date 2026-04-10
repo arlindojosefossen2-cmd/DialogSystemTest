@@ -15,7 +15,6 @@ import br.com.ajf.game.tmx.TMXLoader;
 public final class IslandScene extends AbstractScene
 {	
 	private ChangeIslandScene sceneTransition;
-
 	/**
 	 * Instantiates a new island scene.
 	 *
@@ -38,7 +37,7 @@ public final class IslandScene extends AbstractScene
 		name = "Island";
 		player.start();
 	
-		TMXLoader tmxLoader = new TMXLoader("/maps/world2.tmx");
+		tmxLoader = new TMXLoader("/maps/world2.tmx");
 		
 		tileManager = tmxLoader.getTileManager();
 		
@@ -69,7 +68,8 @@ public final class IslandScene extends AbstractScene
 		entities.add(entityTest);
 		entityTest.name = "Joan";
 		
-		 this.addDialog(entityTest.name,"Hi!I am a dumpy!\nbut may name is "+entityTest.name+"\nNice to meet you.");
+		 this.addDialog(entityTest.name,"Hi!I am a dumpy!\nbut may name is "+entityTest.name+"\nNice to meet you.",
+				 "Press \"X\" to attack.");
 		//end testing
 		
 		sceneTransition = new ChangeIslandScene();

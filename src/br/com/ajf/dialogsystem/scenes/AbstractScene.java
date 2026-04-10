@@ -13,9 +13,11 @@ import br.com.ajf.game.character.CharacterOrderLayer;
 import br.com.ajf.game.collision.Collider;
 import br.com.ajf.game.framework.Game;
 import br.com.ajf.game.input.GameInput;
+import br.com.ajf.game.moviment.FourDirections;
 import br.com.ajf.game.player.Player;
 import br.com.ajf.game.scene.Scene;
 import br.com.ajf.game.tile.ITileManager;
+import br.com.ajf.game.tmx.TMXLoader;
 
 
 /**
@@ -67,6 +69,8 @@ public abstract class AbstractScene implements Scene
 
 	protected final DialogManager dialogManager = new DialogManager();
 
+	protected TMXLoader tmxLoader ;
+
 	/**
 	 * Instantiates a new abstract scene.
 	 *
@@ -107,11 +111,33 @@ public abstract class AbstractScene implements Scene
 
 		updateEnemies();
 
+		deadPlayer();
+
 		characters.sort(alternator);
 		
 		if(transition != null)
 		{
 			transition.update(game.delta());
+		}
+	}
+
+	private void deadPlayer()
+	{
+		if(player.health.getLife() <= 0)
+		{
+			if (player.animations.isFinished(12))
+			{
+				player.health.setLife(player.health.getMaxLife());
+				player.direction = FourDirections.DOWN;
+				player.animations.reset(12);
+
+				if (tmxLoader != null)
+				{
+					player.position = tmxLoader.getVector2IListFromPropertyTagName("Player").getFirst();
+				}
+
+				game.changeScene(name);
+			}
 		}
 	}
 
@@ -132,22 +158,19 @@ public abstract class AbstractScene implements Scene
 			return;
 		}
 
-		if(enemy != null)
+		if (player.attackArea.intersects(enemy.collider))
 		{
-			if(player.attackArea.intersects(enemy.collider))
-			{
-				enemy.preventMovement(game.delta()*10);
-				enemy.health.setLife(enemy.health.getLife()-1);
-			}
-
-
-			enemy.collision = false;
-			enemy.update(game.delta());
-			updateEnemyCollisionWithEntities(enemy);
-			updateEnemyTileCollision(enemy);
-			updateTransition(enemy);
-			characters.add(enemy);
+			enemy.preventMovement(game.delta() * 25);
+			enemy.health.setLife(enemy.health.getLife() - 1);
 		}
+
+
+		enemy.collision = false;
+		enemy.update(game.delta());
+		updateEnemyCollisionWithEntities(enemy);
+		updateEnemyTileCollision(enemy);
+		updateTransition(enemy);
+		characters.add(enemy);
 	}
 
 	private void updateEnemyTileCollision(AbstractCharacter enemy)
@@ -175,12 +198,6 @@ public abstract class AbstractScene implements Scene
 				{
 					enemy.preventMovement(game.delta());
 					abstractCharacter.preventMovement(game.delta());
-				}
-
-				if(player.health.getLife() <= 0)
-				{
-					//add player dead
-					System.out.println("Player is dead!");
 				}
 			}
 		}

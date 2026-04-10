@@ -107,18 +107,24 @@ public final class DartPlayerMoviment extends AbstractCharacterMovement
 	 * @param delta the delta
 	 */
 	public void update(float delta,IAnimationManager animations)
-	{	
-		if(character.moving && !character.collision && !((Player)character).attacking)
+	{
+		if(character.health.getLife() > 0)
 		{
-			moving(animations,delta);
-		}
-		else if(((Player)character).attacking)
-		{
-			attacking(animations);
+			if (character.moving && !character.collision && !((Player) character).attacking)
+			{
+				moving(animations, delta);
+			} else if (((Player) character).attacking)
+			{
+				attacking(animations);
+			} else
+			{
+				standing(animations);
+			}
 		}
 		else
 		{
-			standing(animations);
+			animations.setAnimationByIndex(12);
+			character.moving = false;
 		}
 		
 		animations.update(delta);
@@ -128,47 +134,43 @@ public final class DartPlayerMoviment extends AbstractCharacterMovement
 	{
 		((Player)character).attackArea.setX(character.getCenterPositionX() -
 											((Player)character).attackArea.getWidth()/2);
-
 		((Player)character).attackArea.setY(character.getCenterPositionY() -
 											((Player)character).attackArea.getHeight()/2);
 		switch(character.direction)
 		{
 			case FourDirections.UP:
-				animations.setAnimationByIndex(1);
+				animations.setAnimationByIndex(8);
 				((Player)character).attackArea.setY(character.position.getY() +
 													character.getHeight()/2 -
 													((Player)character).attackArea.getHeight()*2);
 				break;
 			case FourDirections.DOWN:
-				animations.setAnimationByIndex(5);
+				animations.setAnimationByIndex(10);
 				((Player)character).attackArea.setY(character.getCenterPositionY() +
 													((Player)character).attackArea.getHeight()*2);
 				break;
 			case FourDirections.LEFT:
-				animations.setAnimationByIndex(3);
+				animations.setAnimationByIndex(9);
 				((Player)character).attackArea.setX(character.position.getX() +
 													character.getWidth()/2 -
 													((Player)character).attackArea.getWidth()*2);
-
 				break;
 			case FourDirections.RIGHT:
-				animations.setAnimationByIndex(7);
+				animations.setAnimationByIndex(11);
 				((Player)character).attackArea.setX(character.getCenterPositionX()+
 													((Player)character).attackArea.getWidth());
-
 				break;
 		}
 
-		//add attack animations need change the index
-		if(animations.isFinished(1) || animations.isFinished(5) || animations.isFinished(3) || animations.isFinished(7))
+		if(animations.isFinished(8) || animations.isFinished(9) || animations.isFinished(10) || animations.isFinished(11))
 		{
 			((Player) character).attacking = false;
 			((Player)character).attackArea.setX(-1000000);
 			((Player)character).attackArea.setY(-1000000);
-			animations.reset(1);
-			animations.reset(5);
-			animations.reset(7);
-			animations.reset(3);
+			animations.reset(8);
+			animations.reset(9);
+			animations.reset(10);
+			animations.reset(11);
 		}
 	}
 }
