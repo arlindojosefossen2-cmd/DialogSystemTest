@@ -16,10 +16,20 @@ public final class DrawPlayerUI implements IDrawPlayerUI
 		graphics2d.setColor(Color.yellow);
 		graphics2d.setFont(graphics2d.getFont().deriveFont(Font.BOLD,STYLE_FONT_32));
 		graphics2d.drawString("Life: ", 8, 32);
-		
-		graphics2d.setColor(Color.blue);
 
-		graphics2d.fillRect(8, 48, 
-				(int) (GameLauncher.TILE_SIZE *GameLauncher.SCALE*player.health.getLife()/player.health.getMaxLife()), 32);
+		graphics2d.setColor(Color.RED);
+		graphics2d.fillRoundRect(7, 47,
+				(int) (GameLauncher.ORIGINAL_TILE_SIZE * GameLauncher.SCALE * player.health.getMaxLife())/2+2,
+				32+2,5,5);
+
+		graphics2d.setColor(Color.blue);
+		graphics2d.fillRoundRect(8, 48,
+				(int) (GameLauncher.TILE_SIZE * GameLauncher.SCALE * player.health.getLife()/player.health.getMaxLife()),
+				32,5,5);
+
+		graphics2d.setColor(Color.BLACK);
+		graphics2d.drawRoundRect(7, 47,
+				(int) (GameLauncher.ORIGINAL_TILE_SIZE * GameLauncher.SCALE * player.health.getMaxLife())/2+2,
+				32+2,5,5);
 	}
 }
