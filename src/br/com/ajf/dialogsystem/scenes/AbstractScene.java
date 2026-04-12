@@ -160,10 +160,9 @@ public abstract class AbstractScene implements Scene
 
 		if (player.attackArea.intersects(enemy.collider))
 		{
-			enemy.prevent(player,game.delta() * 25);
+			enemy.prevent(player,game.delta() * 10);
 			enemy.health.setLife(enemy.health.getLife() - 1);
 		}
-
 
 		enemy.collision = false;
 		enemy.update(game.delta());
@@ -187,10 +186,15 @@ public abstract class AbstractScene implements Scene
 		{
 			if(enemy.collider.intersects(abstractCharacter.collider))
 			{
+				if(CharacterCollisions.isCollisionBYCharacterTypeName(enemy,colliders,COLLISION))
+				{
+					enemy.preventMovement(game.delta());
+				}
+
 				if(abstractCharacter instanceof Player)
 				{
-					enemy.preventMovement(game.delta()*25);
-					abstractCharacter.preventMovement(game.delta()*25);
+					enemy.preventMovement(game.delta()*10);
+					abstractCharacter.preventMovement(game.delta()*10);
 					abstractCharacter.health.setLife(abstractCharacter.health.getLife()-1);
 					enemy.health.setLife(enemy.health.getLife()-1);
 				}
