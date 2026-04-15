@@ -12,14 +12,14 @@ import br.com.ajf.game.framework.Game;
 
 public final class CharacterDialog
 {
-	private final Dialog dialog;
+	private final IDialog dialog;
 	private final SubScreen screen;
 	private final Map<String,BufferedImage> images = new HashMap<>();
 	private BufferedImage img;
 	
 	public CharacterDialog()
 	{
-		dialog = new Dialog();
+		dialog = new DialogLetterByLetter();
 		screen = new SubScreen(GameLauncher.WIDTH/4, GameLauncher.HEIGHT-128-32, 320, 128);
 	}
 	

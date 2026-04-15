@@ -66,10 +66,10 @@ public final class IslandScene extends AbstractScene
 		
 		entityTest.position.set(player.position.getX()-128,player.position.getY()+96);
 		entities.add(entityTest);
-		entityTest.name = "Joan";
+		entityTest.name = "JoanTeodor";
 		
 		 this.addDialog(entityTest.name,"Hi!I am a dumpy!\nbut may name is "+entityTest.name+"\nNice to meet you.",
-				 "Press \"X\" to attack.");
+				 "Press \"X\" to\nattack.");
 		//end testing
 		
 		sceneTransition = new ChangeIslandScene();

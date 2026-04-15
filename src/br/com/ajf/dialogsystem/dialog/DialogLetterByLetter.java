@@ -1,23 +1,28 @@
 package br.com.ajf.dialogsystem.dialog;
 
-import java.awt.Color;
-import java.awt.Font;
-import java.awt.Graphics2D;
-import java.awt.event.KeyEvent;
-import java.util.*;
-
 import br.com.ajf.game.input.GameInput;
 
-public final class Dialog implements IDialog
+import java.awt.*;
+import java.awt.event.KeyEvent;
+import java.util.*;
+import java.util.List;
+
+public final class DialogLetterByLetter implements IDialog
 {
 	private int index = -1;
+
 	private final Map<String,List<String>> dialogs = new HashMap<>();
+
 	private boolean dialog;
 	private List<String> dialogsList;
-	
-	public Dialog()
+
+	private String textCombined;
+	private String currentText;
+	private int charIndex;
+
+	public DialogLetterByLetter()
 	{
-		
+
 	}
 	
 	public IDialog add(String name,String text)
@@ -63,11 +68,10 @@ public final class Dialog implements IDialog
 			if(GameInput.keyDownOnce(KeyEvent.VK_M))
 			{
 				index++;
+				charIndex = 0;
+				textCombined = "";
 			}
 		}
-		
-		int x = xPos;
-		int y = yPos;
 		
 		dialogsList = dialogs.get(name);
 		
@@ -84,30 +88,23 @@ public final class Dialog implements IDialog
 		
 		if(index > -1 && dialog)
 		{
-			String text = dialogsList.get(index);
-			String[] aux = text.split("\n");
-			
 			graphics2d.setFont(graphics2d.getFont().deriveFont(Font.BOLD, 18f));
-			
-			graphics2d.setColor(Color.RED);
-			String str = name + ": - ";
-			graphics2d.drawString(str, x, y);
-			
-			x += (int) graphics2d.getFont().getStringBounds(str,graphics2d.getFontRenderContext()).getWidth();
-			
 			graphics2d.setColor(Color.white);
 
-			for (String string : aux)
+			char[] array = this.dialogsList.get(index).toCharArray();
+
+			if(charIndex < array.length)
 			{
-				graphics2d.drawString(string, x, y);
-			
-				x += 32;
-				y += 23;	
-				
-				if(x > 256)
-				{
-					x = xPos;
-				}
+				String auxText = String.valueOf(array[charIndex]);
+				textCombined = textCombined + auxText;
+				currentText = textCombined;
+				charIndex++;
+			}
+
+			for (String textFinal : currentText.split("\n"))
+			{
+				graphics2d.drawString(textFinal, xPos,yPos);
+				yPos += graphics2d.getFont().getSize();
 			}
 		}
 	}
