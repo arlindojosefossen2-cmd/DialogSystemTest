@@ -1,5 +1,7 @@
 package br.com.ajf.dialogsystem.dialog;
 
+import br.com.ajf.game.audio.wav.IAudio;
+import br.com.ajf.game.audio.wav.SoundEFX;
 import br.com.ajf.game.input.GameInput;
 
 import java.awt.*;
@@ -20,9 +22,11 @@ public final class DialogLetterByLetter implements IDialog
 	private String currentText;
 	private int charIndex;
 
+	private final IAudio speakSound = new SoundEFX("/sounds/speak.wav");
+
 	public DialogLetterByLetter()
 	{
-
+		speakSound.setVolume(6f);
 	}
 	
 	public IDialog add(String name,String text)
@@ -95,6 +99,8 @@ public final class DialogLetterByLetter implements IDialog
 
 			if(charIndex < array.length)
 			{
+				speakSound.stop();
+				speakSound.play();
 				String auxText = String.valueOf(array[charIndex]);
 				textCombined = textCombined + auxText;
 				currentText = textCombined;

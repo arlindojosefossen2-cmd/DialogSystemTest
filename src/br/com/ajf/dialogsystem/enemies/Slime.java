@@ -30,16 +30,16 @@ public class Slime extends AbstractCharacter
 	{
 		super.draw(graphics2d, playerXOffset, playerYOffset);
 
-		graphics2d.setColor(Color.RED);
-		graphics2d.fillRoundRect(position.getX()+playerXOffset+getWidth()/2,
+		graphics2d.setColor(Color.DARK_GRAY);
+		graphics2d.fillRoundRect(position.getX()+playerXOffset+getWidth()/2-GameLauncher.TILE_SIZE/2,
 				position.getY()+playerYOffset-32,
 				GameLauncher.TILE_SIZE,
 				16,
 				5,
 				5);
 
-		graphics2d.setColor(Color.blue);
-		graphics2d.fillRoundRect(position.getX()+playerXOffset+getWidth()/2,
+		graphics2d.setColor(Color.RED);
+		graphics2d.fillRoundRect(position.getX()+playerXOffset+getWidth()/2-GameLauncher.TILE_SIZE/2,
 				position.getY()+playerYOffset-32,
 				( GameLauncher.TILE_SIZE * health.getLife() /health.getMaxLife()),
 				16,
@@ -47,7 +47,7 @@ public class Slime extends AbstractCharacter
 				5);
 
 		graphics2d.setColor(Color.BLACK);
-		graphics2d.drawRoundRect(position.getX()+playerXOffset+getWidth()/2,
+		graphics2d.drawRoundRect(position.getX()+playerXOffset+getWidth()/2-GameLauncher.TILE_SIZE/2,
 				position.getY()+playerYOffset-32,
 				GameLauncher.TILE_SIZE,
 				16,
