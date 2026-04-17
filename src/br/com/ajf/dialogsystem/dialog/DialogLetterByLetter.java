@@ -101,15 +101,33 @@ public final class DialogLetterByLetter implements IDialog
 			{
 				speakSound.stop();
 				speakSound.play();
-				String auxText = String.valueOf(array[charIndex]);
-				textCombined = textCombined + auxText;
+				textCombined = textCombined + array[charIndex];
 				currentText = textCombined;
 				charIndex++;
 			}
 
-			for (String textFinal : currentText.split("\n"))
+			int x = xPos;
+
+			graphics2d.setColor(Color.ORANGE);
+			String str = name + ": - ";
+			graphics2d.drawString(str,x,yPos);
+
+			x += (int)graphics2d.getFont().getStringBounds(str,graphics2d.getFontRenderContext()).getWidth();
+
+			graphics2d.setColor(Color.LIGHT_GRAY);
+
+			String[] split = currentText.split("\n");
+
+			for(int i = 0;i < split.length;i++)
 			{
-				graphics2d.drawString(textFinal, xPos,yPos);
+				String textFinal = split[i];
+
+				if(i >= 1)
+				{
+					x = xPos;
+				}
+
+				graphics2d.drawString(textFinal, x,yPos);
 				yPos += graphics2d.getFont().getSize();
 			}
 		}

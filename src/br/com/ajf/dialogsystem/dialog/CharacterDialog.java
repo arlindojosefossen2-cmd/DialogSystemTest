@@ -20,7 +20,7 @@ public final class CharacterDialog
 	public CharacterDialog()
 	{
 		dialog = new DialogLetterByLetter();
-		screen = new SubScreen(GameLauncher.WIDTH/4, GameLauncher.HEIGHT-128-32, 320, 128);
+		screen = new SubScreen((int) (GameLauncher.WIDTH/4.5), GameLauncher.HEIGHT-128-32, 394, 128);
 	}
 	
 	public CharacterDialog add(String name,String text)
