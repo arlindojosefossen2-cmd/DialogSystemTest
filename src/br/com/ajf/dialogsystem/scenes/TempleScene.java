@@ -1,5 +1,6 @@
 package br.com.ajf.dialogsystem.scenes;
 
+import br.com.ajf.dialogsystem.light.Lighting;
 import br.com.ajf.game.character.AbstractCharacter;
 import br.com.ajf.game.collision.Collider;
 import br.com.ajf.game.framework.Game;
@@ -45,6 +46,8 @@ public final class TempleScene extends AbstractScene
 		entities.add(player);
 		
 		transition.setName(name);
+
+		area = Lighting.inside;
 		
 		return this;
 	}

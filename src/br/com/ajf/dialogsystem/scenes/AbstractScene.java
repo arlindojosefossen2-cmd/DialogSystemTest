@@ -6,6 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import br.com.ajf.dialogsystem.dialog.DialogManager;
+import br.com.ajf.dialogsystem.light.LightingManager;
 import br.com.ajf.dialogsystem.player.DartPlayer;
 import br.com.ajf.game.character.AbstractCharacter;
 import br.com.ajf.game.character.CharacterCollisions;
@@ -71,6 +72,8 @@ public abstract class AbstractScene implements Scene
 
 	protected TMXLoader tmxLoader ;
 
+	protected static final LightingManager lightingManager = new LightingManager();
+	protected int area;
 	/**
 	 * Instantiates a new abstract scene.
 	 *
@@ -114,7 +117,9 @@ public abstract class AbstractScene implements Scene
 		deadPlayer();
 
 		characters.sort(alternator);
-		
+
+		lightingManager.update();
+
 		if(transition != null)
 		{
 			transition.update(game.delta());

@@ -55,7 +55,10 @@ public final class DrawScene
 		}
 		//draw debug scene for colliders dialog and player position
 		DebugScene.draw(graphics2d,scene);
-		
+
+		//draw light to outside or dungeon
+		AbstractScene.lightingManager.draw(graphics2d, scene.area);
+
 		//draw player UI
 		scene.player.drawUI(graphics2d);
 		

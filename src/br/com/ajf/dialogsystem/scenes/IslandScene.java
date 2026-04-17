@@ -2,6 +2,7 @@ package br.com.ajf.dialogsystem.scenes;
 
 import br.com.ajf.dialogsystem.enemies.Slime;
 import br.com.ajf.dialogsystem.entity.EntityPlayer;
+import br.com.ajf.dialogsystem.light.Lighting;
 import br.com.ajf.game.character.AbstractCharacter;
 import br.com.ajf.game.collision.Collider;
 import br.com.ajf.game.framework.Game;
@@ -81,6 +82,8 @@ public final class IslandScene extends AbstractScene
 		slime.position.set(player.position.getX()-96,player.position.getY()-96);
 
 		enemies.add(slime);
+
+		area = Lighting.outside;
 		
 		return this;
 	}
