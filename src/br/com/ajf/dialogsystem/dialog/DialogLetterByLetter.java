@@ -128,7 +128,7 @@ public final class DialogLetterByLetter implements IDialog
 				}
 
 				graphics2d.drawString(textFinal, x,yPos);
-				yPos += graphics2d.getFont().getSize();
+				yPos += graphics2d.getFont().getSize()+4;
 			}
 		}
 	}

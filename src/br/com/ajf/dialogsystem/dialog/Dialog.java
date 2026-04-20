@@ -102,7 +102,7 @@ public final class Dialog implements IDialog
 				graphics2d.drawString(string, x, y);
 			
 				x += 32;
-				y += 23;	
+				y += (graphics2d.getFont().getSize()+4);
 				
 				if(x > 256)
 				{
