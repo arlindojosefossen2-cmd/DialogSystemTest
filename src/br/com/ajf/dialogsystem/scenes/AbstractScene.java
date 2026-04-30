@@ -51,10 +51,10 @@ public abstract class AbstractScene implements Scene
 	protected Game game;
 	
 	/** The player. */
-	protected DartPlayer player;
+	public DartPlayer player;
 	
 	/** The tile manager. */
-	protected ITileManager tileManager;
+	public ITileManager tileManager;
 	
 	/** The layers. */
 	protected int[] layers;

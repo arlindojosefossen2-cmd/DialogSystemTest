@@ -1,6 +1,7 @@
 package br.com.ajf.dialogsystem.enemies;
 
 import br.com.ajf.dialogsystem.main.GameLauncher;
+import br.com.ajf.dialogsystem.scenes.AbstractScene;
 import br.com.ajf.game.character.AbstractCharacter;
 import br.com.ajf.game.character.CharacterLoader;
 import br.com.ajf.game.collision.Collider;
@@ -9,13 +10,20 @@ import java.awt.*;
 
 public class Slime extends AbstractCharacter
 {
+	private final AbstractScene scene;
+
+	public Slime(AbstractScene scene)
+	{
+		this.scene = scene;
+	}
+
 	@Override
 	public void start()
 	{
 		name ="Blue-Slime";
 
 		addCharacterInput(new SlimeInput(this));
-		addCharacterMovement(new SlimeMoviment(this));
+		addCharacterMovement(new SlimeMoviment(this,scene));
 
 		solidAreaX = 16;
 		solidAreaY = 16;

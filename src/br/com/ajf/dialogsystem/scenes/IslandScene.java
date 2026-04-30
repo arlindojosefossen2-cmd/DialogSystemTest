@@ -78,7 +78,7 @@ public final class IslandScene extends AbstractScene
 		
 		transition.setName(name);
 
-		Slime slime = new Slime();
+		Slime slime = new Slime(this);
 		slime.start();
 		slime.position.set(player.position.getX()-96,player.position.getY()-96);
 
