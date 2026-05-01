@@ -7,7 +7,6 @@ import br.com.ajf.game.character.AbstractCharacter;
 import br.com.ajf.game.collision.Collider;
 import br.com.ajf.game.framework.Game;
 import br.com.ajf.game.scene.Scene;
-import br.com.ajf.game.tile.ITile;
 import br.com.ajf.game.tmx.TMXLoader;
 
 
@@ -85,13 +84,6 @@ public final class IslandScene extends AbstractScene
 		enemies.add(slime);
 
 		area = Lighting.outside;
-
-		ITile[] tiles = tileManager.getTiles();
-
-		for (ITile tile : tiles)
-		{
-			System.out.println(tile.solid());
-		}
 		
 		return this;
 	}
