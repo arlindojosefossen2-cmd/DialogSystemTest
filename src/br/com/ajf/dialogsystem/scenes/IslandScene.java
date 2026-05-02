@@ -2,6 +2,7 @@ package br.com.ajf.dialogsystem.scenes;
 
 import br.com.ajf.dialogsystem.enemies.Slime;
 import br.com.ajf.dialogsystem.entity.EntityPlayer;
+import br.com.ajf.dialogsystem.ia.PathFinderManager;
 import br.com.ajf.dialogsystem.light.Lighting;
 import br.com.ajf.game.character.AbstractCharacter;
 import br.com.ajf.game.collision.Collider;
@@ -83,7 +84,16 @@ public final class IslandScene extends AbstractScene
 
 		enemies.add(slime);
 
+		Slime slime2 = new Slime(this);
+		slime2.start();
+		slime2.position.set(player.position.getX(),player.position.getY()-96);
+
+		enemies.add(slime2);
+
 		area = Lighting.outside;
+
+		pathFinderManager = new PathFinderManager(tileManager);
+		pathFinderManager.onPath = true;
 		
 		return this;
 	}

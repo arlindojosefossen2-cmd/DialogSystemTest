@@ -100,7 +100,7 @@ public class PathFinder
 
 	public boolean search()
 	{
-		while (!goalReached && step < 500)
+		while (!goalReached && step < 400)
 		{
 			if(currentNode == null)
 				continue;
@@ -119,11 +119,11 @@ public class PathFinder
 			{
 				openTileNode(this.tileNodes[row][column-1]);
 			}
-			if(row+1 <= this.tileManager.getData()[0].length-1)
+			if(row+1 <= this.tileManager.getData()[0].length)
 			{
 				openTileNode(this.tileNodes[row+1][column]);
 			}
-			if(column+1 <= this.tileManager.getData()[0][0].length-1)
+			if(column+1 <= this.tileManager.getData()[0][0].length)
 			{
 				openTileNode(this.tileNodes[row][column+1]);
 			}

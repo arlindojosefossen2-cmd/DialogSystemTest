@@ -1,6 +1,5 @@
 package br.com.ajf.dialogsystem.enemies;
 
-import br.com.ajf.dialogsystem.ia.PathFinderManager;
 import br.com.ajf.dialogsystem.main.GameLauncher;
 import br.com.ajf.dialogsystem.scenes.AbstractScene;
 import br.com.ajf.game.character.AbstractCharacter;
@@ -12,7 +11,6 @@ import java.awt.*;
 public class Slime extends AbstractCharacter
 {
 	private final AbstractScene scene;
-	private PathFinderManager p;
 
 	public Slime(AbstractScene scene)
 	{
@@ -33,26 +31,7 @@ public class Slime extends AbstractCharacter
 
 		collider = new Collider(0,0, 16+16,16+16, 32, 32, "Enemy");
 
-		p = new PathFinderManager(scene.tileManager);
-		p.onPath = true;
-
 		animations = new CharacterLoader().loadAnimationFromXMLFile("/enemies/slime-blue.xml", this);
-	}
-
-	@Override
-	public void update(float delta)
-	{
-		if(p.onPath)
-		{
-			p.searchPath(scene.player, this,false,
-					(int)(GameLauncher.TILE_SIZE*GameLauncher.SCALE),delta);
-
-			animations.update(delta);
-		}
-		else
-		{
-			super.update(delta);
-		}
 	}
 
 	@Override

@@ -6,7 +6,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 import br.com.ajf.dialogsystem.dialog.DialogManager;
+import br.com.ajf.dialogsystem.ia.PathFinderManager;
 import br.com.ajf.dialogsystem.light.LightingManager;
+import br.com.ajf.dialogsystem.main.GameLauncher;
 import br.com.ajf.dialogsystem.player.DartPlayer;
 import br.com.ajf.game.character.AbstractCharacter;
 import br.com.ajf.game.character.CharacterCollisions;
@@ -31,7 +33,8 @@ public abstract class AbstractScene implements Scene
 	
 	/** The Constant COLLISION. */
 	protected static final String COLLISION = "Collision";
-	
+	public static final int MIN_PLAYER_DISTANCE = 120;
+
 	/** The rects. */
 	protected List<Collider> colliders ;
 	
@@ -74,6 +77,10 @@ public abstract class AbstractScene implements Scene
 
 	protected static final LightingManager lightingManager = new LightingManager();
 	protected int area;
+
+	protected PathFinderManager pathFinderManager;
+	private int distance;
+
 	/**
 	 * Instantiates a new abstract scene.
 	 *
@@ -165,16 +172,35 @@ public abstract class AbstractScene implements Scene
 
 		if (player.attackArea.intersects(enemy.collider))
 		{
-			enemy.prevent(player,game.delta() * 10);
+			enemy.prevent(player, game.delta() * 10);
 			enemy.health.setLife(enemy.health.getLife() - 1);
 		}
 
 		enemy.collision = false;
-		enemy.update(game.delta());
+
+		distance = calculateDistanceToPlayer(enemy);
+
+		if (pathFinderManager != null && distance <= MIN_PLAYER_DISTANCE)
+		{
+				pathFinderManager.searchPath(player,enemy,
+						false, (int)(GameLauncher.TILE_SIZE*GameLauncher.SCALE), game.delta());
+				enemy.animations.update(game.delta());
+		}
+		else
+		{
+			enemy.update(game.delta());
+		}
+
 		updateEnemyCollisionWithEntities(enemy);
 		updateEnemyTileCollision(enemy);
 		updateTransition(enemy);
 		characters.add(enemy);
+	}
+
+	private int calculateDistanceToPlayer(AbstractCharacter enemy)
+	{
+		return (Math.abs(enemy.position.getX() - player.position.getX())
+				+  Math.abs(enemy.position.getY() - player.position.getY()))/2;
 	}
 
 	private void updateEnemyTileCollision(AbstractCharacter enemy)
