@@ -8,12 +8,13 @@ import br.com.ajf.game.tile.TileManager;
 public class PathFinderManager
 {
 	private final PathFinder finder;
-	public boolean onPath;
+	private boolean onPath;
 	private final TileCollisionChecker collisionChecker = new TileCollisionChecker();
 
-	public PathFinderManager(ITileManager tileManager)
+	public PathFinderManager(ITileManager tileManager,boolean onPath)
 	{
 		this.finder = new PathFinder(tileManager);
+		this.onPath = onPath;
 	}
 
 	public void searchPath(AbstractCharacter start,AbstractCharacter goal,boolean reachDestination,

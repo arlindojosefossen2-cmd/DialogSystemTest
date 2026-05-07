@@ -10,7 +10,6 @@ import br.com.ajf.game.framework.Game;
 import br.com.ajf.game.scene.Scene;
 import br.com.ajf.game.tmx.TMXLoader;
 
-
 /**
  * The Class IslandScene.
  */
@@ -92,8 +91,7 @@ public final class IslandScene extends AbstractScene
 
 		area = Lighting.outside;
 
-		pathFinderManager = new PathFinderManager(tileManager);
-		pathFinderManager.onPath = true;
+		pathFinderManager = new PathFinderManager(tileManager,false);
 		
 		return this;
 	}
