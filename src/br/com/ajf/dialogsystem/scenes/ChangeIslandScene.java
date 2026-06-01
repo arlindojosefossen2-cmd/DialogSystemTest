@@ -15,43 +15,37 @@ public final class ChangeIslandScene
 			{
 				if(abstractCharacter.collider.intersects(collider))
 				{
-					player.position.set(1530,2400);
-					
-					if(game.changeScene("Cave") == null)
-						game.addScene(new CaveScene(game,player).start());
-				}
+                    game.addScene(new CaveScene(game,player).start());
+                    player.position.set(1530,2400);
+                }
 			}
 			else if(collider.getId() == 2)
 			{
 				if(abstractCharacter.collider.intersects(collider))
 				{
-					player.direction = FourDirections.UP;
-					player.position.set(1613,2402);
-					
-					if(game.changeScene("City") == null)
-						game.addScene(new CityScene(game,player).start());
-					
+                    game.addScene(new CityScene(game,player).start());
+                    player.direction = FourDirections.UP;
+                    player.position.set(1613,2402);
+
 				}
 			}
 			else if(collider.getId() == 4)
 			{
 				if(abstractCharacter.collider.intersects(collider))
 				{
-					player.direction = FourDirections.UP;
-					player.position.set(1279,2349);
-					if(game.changeScene("Temple") == null)
-						game.addScene(new TempleScene(game,player).start());
-				}
+                    game.addScene(new TempleScene(game,player).start());
+                    player.direction = FourDirections.UP;
+                    player.position.set(1279,2349);
+                }
 			}
 			else if(collider.getId() == 3)
 			{
 				if(abstractCharacter.collider.intersects(collider))
 				{
-					player.direction = FourDirections.UP;
-					player.position.set(1036,2364);
-					if(game.changeScene("Home") == null)
-						game.addScene(new HomeScene(game,player).start());
-				}
+                    game.addScene(new HomeScene(game,player).start());
+                    player.direction = FourDirections.UP;
+                    player.position.set(1036,2364);
+                }
 			}
 		}
 	}

@@ -68,10 +68,10 @@ public final class CaveScene extends AbstractScene
 				if(abstractCharacter.collider.intersects(collider))
 				{
 	//				change position of player when exit of the cave
-					player.position.set(1080, 1220);
 					this.transition.reset();
-					((AbstractScene)(this.game.changeScene("Island"))).transition.reset();	
-				}
+                    this.game.addScene(new IslandScene(game,player).start());
+                    player.position.set(1080, 1220);
+                }
 			}
 		}
 	}

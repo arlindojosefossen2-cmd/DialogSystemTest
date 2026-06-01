@@ -67,10 +67,10 @@ public final class HomeScene extends AbstractScene
 			{
 				if(abstractCharacter.collider.intersects(collider))
 				{
-					player.position.set(2296, 2345);
 					this.transition.reset();
-					((AbstractScene)(this.game.changeScene("Island"))).transition.reset();	
-				}
+                    this.game.addScene(new IslandScene(game,player).start());
+                    player.position.set(2296, 2345);
+                }
 			}
 		}
 	}

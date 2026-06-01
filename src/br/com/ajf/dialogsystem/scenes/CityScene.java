@@ -68,11 +68,11 @@ public final class CityScene extends AbstractScene
 			{
 				if(abstractCharacter.collider.intersects(collider))
 				{
-					player.position.set(1080, 1680);
-					player.direction = FourDirections.DOWN;
 					this.transition.reset();
-					((AbstractScene)(this.game.changeScene("Island"))).transition.reset();
-				}
+                    this.game.addScene(new IslandScene(game,player).start());
+                    player.position.set(1080, 1680);
+                    player.direction = FourDirections.DOWN;
+                }
 			}
 		}
 	}

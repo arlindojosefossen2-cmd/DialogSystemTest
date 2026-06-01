@@ -148,7 +148,7 @@ public abstract class AbstractScene implements Scene
 					player.position = tmxLoader.getVector2IListFromPropertyTagName("Player").getFirst();
 				}
 
-				game.changeScene(name);
+				game.addScene(this);
 			}
 		}
 	}
