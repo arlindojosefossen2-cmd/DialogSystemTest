@@ -50,7 +50,7 @@ public final class IslandScene extends AbstractScene
 		player.position = tmxLoader.getVector2IListFromPropertyTagName("Player").getFirst();
 		entities.add(player);
 		
-		//testing a entities
+		//testing entities
 		EntityPlayer entityTest = new EntityPlayer();
 		entityTest.start();
 		
